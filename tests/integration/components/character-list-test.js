@@ -15,7 +15,7 @@ test('it renders', function(assert) {
       name: 'aName',
       NT: 1,
       description: 'aDescription'
-  })
+  });
   this.set('characterObj',character);
   this.render(hbs`{{character-list}}`);
 

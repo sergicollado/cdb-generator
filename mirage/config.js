@@ -44,6 +44,6 @@ export default function() {
                 NT: 5,
                 adventures: ['anAdventure', 'anotherAdventure']
             }]
-        }
+        };
     });
 }

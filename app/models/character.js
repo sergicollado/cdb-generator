@@ -5,6 +5,6 @@ export default DS.Model.extend({
     name: DS.attr('string'),
     description: DS.attr('string'),
     NT: DS.attr('number'),
-    adventures: DS.attr()
-
+    adventures: DS.attr(),
+    powerLevel: DS.attr()
 });
