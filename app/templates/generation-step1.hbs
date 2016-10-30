@@ -1,9 +1,13 @@
 {{power-levels-selector character=model}}
+{{model.profile.race}}
+{{character-profile profile=model.profile}}
 <div class="ui section divider"></div>
 <h2 class="ui header"> Personaje </h2>
 <p>
 {{log model.powerLevel}}
-{{ model.name }}
+<h3 class="ui header">Perfil</h3>
+{{model.profile.name}}<br>
+<h3 class="ui header"> Nivel de Poder</h3>
 {{model.powerLevel.name}}<br>
 {{model.powerLevel.description}}
 </p>

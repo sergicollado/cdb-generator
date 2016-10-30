@@ -2,6 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
     pk: DS.attr('number'),
+    profile: DS.belongsTo('character-profile'),
     name: DS.attr('string'),
     description: DS.attr('string'),
     NT: DS.attr('number'),

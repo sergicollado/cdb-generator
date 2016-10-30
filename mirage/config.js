@@ -27,7 +27,11 @@ export default function() {
         return {
             characters: [{
                 id: 1,
-                name: 'aName',
+                profile: {
+                    name: 'aName',
+                    race: 'aRace',
+                    player: 'aPlayer'
+                },
                 description: 'aDescription',
                 NT: 1,
                 adventures: ['anAdventure', 'anotherAdventure']

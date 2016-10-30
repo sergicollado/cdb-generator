@@ -7,6 +7,9 @@ export default Ember.Route.extend({
         controller.set('currentCharacter',this.get('currentCharacter'));
     },
     model: function(){
-        return this.get('store').createRecord('character');
+        let profile = this.get('store').createRecord('character-profile');
+        return this.get('store').createRecord('character', {
+            profile:profile
+        });
     }
 });

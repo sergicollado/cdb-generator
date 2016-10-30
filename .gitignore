@@ -18,3 +18,5 @@ testem.log
 
 
 *.swp
+*.swo
+*.swn
