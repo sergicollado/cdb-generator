@@ -1,6 +1,7 @@
-<div class="ui grid">
-    <div class="three wide column">
-        {{#ui-dropdown class="selection" onChange=(action "select")}}
+<h3 class="ui header"> Nivel de poder</h3>
+<div class="ui one column grid">
+    <div class="column">
+        {{#ui-dropdown class="selection ui input fluid" onChange=(action "select")}}
             <div class="default text">Nivel de Poder</div>
             <i class="dropdown icon"></i>
             <div class="menu">
@@ -12,15 +13,17 @@
             </div>
         {{/ui-dropdown}}
     </div>
-    <div class="nine wide column">
+      <div class="column">
+      {{#if character.powerLevel}}
           <div class="ui segment">
-              <div class="content">
-                  <div class="header">Descripción</div>
-                  <div class="meta"><{{character.powerLevel.name}}/div>
-                  <div class="description">
-                    {{character.powerLevel.description}}
-                  </div>
+          <div class="content">
+              <div class="header">Descripción</div>
+              <div class="meta"><{{character.powerLevel.name}}/div>
+              <div class="description">
+                {{character.powerLevel.description}}
               </div>
-       </div>
-    </div>
+         </div>
+         </div>
+       {{/if}}
+   </div>
 </div>

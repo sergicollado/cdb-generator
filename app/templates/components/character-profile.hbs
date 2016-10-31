@@ -1,9 +1,32 @@
-<div class="ui input">
-{{input value=profile.name placeholder="nombre"}}
-{{input value=profile.race placeholder="nombre"}}
-{{input value=profile.nationality placeholder="nacionalidad"}}
-{{input value=profile.gender placeholder="genero"}}
-{{input value=profile.size placeholder="altura"}}
-{{input value=profile.humanity placeholder="humanidad"}}
+<h3 class="ui header"> Perfil</h3>
+<div class="ui two column grid">
+    <div class="ui column">
+        <div class="ui input fluid">
+        {{input value=profile.name placeholder="nombre" }}
+        </div>
+    </div>
+    <div class="ui column">
+        <div class="ui input fluid">
+        {{input value=profile.race placeholder="nombre"}}
+        </div>
+    </div>
+    <div class="ui column">
+        <div class="ui input fluid">
+        {{input value=profile.nationality placeholder="nacionalidad"}}
+        </div>
+    </div>
+    <div class="ui column">
+        {{#ui-dropdown selection=profile.gender class="selection ui input fluid" onChange=(action (mut profile.gender))}}
+            <div class="default text">Género</div>
+            <div class="menu">
+                <div class="item" data-value="Masculino">Masculino</div>
+                <div class="item" data-value="Femenino">Femenino</div>
+            </div>
+        {{/ui-dropdown}}
+    </div>
+    <div class="ui column">
+        <div class="ui input fluid">
+        {{input value=profile.size placeholder="altura"}}
+        </div>
+    </div>
 </div>
-

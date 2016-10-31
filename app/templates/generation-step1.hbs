@@ -1,12 +1,40 @@
+<div class="ui left attached rail">
+    <div class="ui segment">
+        Nivel de poder
+    </div>
+</div>
 {{power-levels-selector character=model}}
-{{model.profile.race}}
 {{character-profile profile=model.profile}}
+
+
+
 <div class="ui section divider"></div>
 <h2 class="ui header"> Personaje </h2>
 <p>
-{{log model.powerLevel}}
 <h3 class="ui header">Perfil</h3>
-{{model.profile.name}}<br>
+<div class="ui list">
+  <div class="item">
+    <div class="header">Nombre</div>
+    {{model.profile.name}}
+  </div>
+  <div class="item">
+    <div class="header">Raza</div>
+    {{model.profile.race}}
+  </div>
+  <div class="item">
+    <div class="header">Nacionalidad</div>
+    {{model.profile.nationality}}
+  </div>
+  <div class="item">
+    <div class="header">género</div>
+    {{model.profile.gender}}
+  </div>
+  <div class="item">
+    <div class="header">Altura</div>
+    {{model.profile.size}}
+  </div>
+</div>
+
 <h3 class="ui header"> Nivel de Poder</h3>
 {{model.powerLevel.name}}<br>
 {{model.powerLevel.description}}
