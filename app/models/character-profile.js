@@ -13,8 +13,5 @@ export default DS.Model.extend({
     player: DS.attr(),
     age:DS.attr('number'),
     weight:DS.attr(),
-    humanity:DS.attr('number'),
-    stress:DS.attr('number'),
-    madness:DS.attr('number'),
-    corruption:DS.attr('number')
+    description: DS.attr('string')
 });
