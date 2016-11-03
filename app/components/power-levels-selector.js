@@ -5,7 +5,6 @@ export default Ember.Component.extend({
     current:null,
     actions:{
         select(level){
-            console.log(level);
             this.set("character.powerLevel",this.get('powerLevels.list')[level]);
         }
     }

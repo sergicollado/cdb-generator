@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
+  skills:{
     NT1To4: [
         ['arcos','armas arrojadizas', 'armas a 1 mano', 'armas a 2 manos', 'ballestas'],
         ['etiqueta','montar', 'nadar'],
@@ -17,5 +18,5 @@ export default Ember.Service.extend({
         ['armas cortas', 'armas largas', 'computadora','comunicaciones', 'etiqueta','sensores'],
         ['conocimiento ()', 'ciencia()'],
         ['conducir vehículos(Ligeros)', 'pilotar (Aeronave)', 'pilotar (Astronave)']
-    ]
+    ]}
 });

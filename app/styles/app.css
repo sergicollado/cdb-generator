@@ -1,0 +1,6 @@
+.pd.ui.statistics{
+    background-color:white;
+}
+.pd.ui.statistics > .statistic{
+    margin-bottom:0;
+}

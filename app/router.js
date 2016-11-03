@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('about');
   this.route('characters');
   this.route('generation-step1');
+  this.route('statistics');
 });
 
 export default Router;

@@ -1,11 +1,13 @@
-<div class="ui left attached rail">
-    <div class="ui segment">
-        Nivel de poder
-    </div>
-</div>
+{{#ui-sticky context="#main-container"}}
+      <div class="header item">
+        {{character-statistics character=model}}
+        </div>
+{{/ui-sticky }}
+<br>
 {{power-levels-selector character=model}}
+{{nt-selector character=model}}
 {{character-profile profile=model.profile}}
-
+{{added-templates templates=model.templates}}
 <h3 class="ui header">Humanidad</h3>
 
 <div class="ui  column grid segment">
