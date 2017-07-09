@@ -1,37 +1,36 @@
 <form class="ui form">
-    <h3 class="ui dividing header">Perfil</h3>
-      <div class="field">
-           <div class="two fields">
-                <div class="field">
-                    <label>Name</label>
-                    {{input value=profile.name placeholder="nombre" }}
-                </div>
-                <div class="field">
-                    <label>Raza</label>
-                    {{input value=profile.race placeholder="raza"}}
-                </div>
+  <div class="field">
+       <div class="two fields">
+            <div class="field">
+                <label>Name</label>
+                {{input value=profile.name placeholder="nombre" }}
             </div>
-     </div>
-        <div class="field">
-            <label>Nacionalidad</label>
-            {{input value=profile.nationality placeholder="nacionalidad"}}
+            <div class="field">
+                <label>Raza</label>
+                {{input value=profile.race placeholder="raza"}}
+            </div>
         </div>
-        <div class="field">
-            <label>Género</label>
-            {{#ui-dropdown class="selection ui input fluid" onChange=(action (mut profile.gender))}}
-                <div class="default text">Género</div>
-                <div class="menu">
-                    <div class="item" data-value="Masculino">Masculino</div>
-                    <div class="item" data-value="Femenino">Femenino</div>
-                </div>
-            {{/ui-dropdown}}
-        </div>
-        <div class="field">
-            <label>Altura</label>
-            {{input value=profile.size placeholder="Altura"}}
-        </div>
-        <div class="field">
-            <label>Descripción</label>
-            {{textarea value=profile.description placeholder="Descripcion"}}
-        </div>
+  </div>
+  <div class="field">
+      <label>Nacionalidad</label>
+      {{input value=profile.nationality placeholder="nacionalidad"}}
+  </div>
+  <div class="field">
+      <label>Género</label>
+      {{#ui-dropdown class="selection ui input fluid" onChange=(action (mut profile.gender))}}
+          <div class="default text">Género</div>
+          <div class="menu">
+              <div class="item" data-value="Masculino">Masculino</div>
+              <div class="item" data-value="Femenino">Femenino</div>
+          </div>
+      {{/ui-dropdown}}
+  </div>
+  <div class="field">
+      <label>Altura</label>
+      {{input value=profile.size placeholder="Altura"}}
+  </div>
+  <div class="field">
+      <label>Descripción</label>
+      {{textarea value=profile.description placeholder="Descripcion"}}
+  </div>
 </form>

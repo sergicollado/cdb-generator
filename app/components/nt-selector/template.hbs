@@ -1,17 +1,18 @@
-<h3 class="ui header"> Nivel tecnológico</h3>
 <div class="ui one column grid">
-    <div class="column">
-        {{#ui-dropdown class="selection ui input fluid" onChange=(action (mut character.NT))}}
-            <div class="default text">Nivel tecnológico</div>
-            <i class="dropdown icon"></i>
-            <div class="menu">
-            {{#each-in NTList.skills as |name nt|}}
-                <div class="item" data-value="{{name}}">
-                {{name}}
-                </div>
-            {{/each-in}}
-            </div>
-        {{/ui-dropdown}}
+  <div class="column">
+    <div class="field">
+      <label>Nivel tecnológico</label>
+      {{#ui-dropdown class="selection ui input fluid" onChange=(action (mut character.NT))}}
+          <div class="default text">Nivel tecnológico</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+          {{#each-in NTList.skills as |name nt|}}
+              <div class="item" data-value="{{name}}">
+              {{name}}
+              </div>
+          {{/each-in}}
+          </div>
+      {{/ui-dropdown}}
     </div>
+  </div>
 </div>
-{{log NTList.NT1To4}}

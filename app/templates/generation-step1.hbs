@@ -4,34 +4,30 @@
         </div>
 {{/ui-sticky }}
 <br>
-{{power-levels-selector character=model}}
-{{nt-selector character=model}}
-{{character-profile profile=model.profile}}
-{{added-templates templates=model.templates}}
-<h3 class="ui header">Humanidad</h3>
+{{#ui-accordion class="styled"}}
+  <div class="title">
+    Contexto
+  </div>
+  <div class="content">
+    {{power-levels-selector character=model}}
+    {{nt-selector character=model}}
+  </div>
 
-<div class="ui  column grid segment">
-    <div class="ui column">
-        <div class="ui list ">
-          <div class="item">
-            <div class="header">Humanidad</div>
-            {{model.humanity}}
-          </div>
-        </div>
-          <div class="item">
-            <div class="header">Estrés</div>
-            {{model.stress}}
-          </div>
-          <div class="item">
-            <div class="header">Locura</div>
-            {{model.madness}}
-          </div>
-          <div class="item">
-            <div class="header">Corrupción</div>
-            {{model.corruption}}
-          </div>
-    </div>
-</div>
+  <div class="title">
+    Perfil
+  </div>
+  <div class="content">
+    {{character-profile profile=model.profile}}
+  </div>
+
+  <div class="title">
+    Psique
+  </div>
+  <div class="content">
+    {{character-psique character=model}}
+  </div>
+{{/ui-accordion}}
+{{!-- {{added-templates templates=model.templates}} --}}
 
 <div class="ui section divider"></div>
 <h2 class="ui header"> Personaje </h2>

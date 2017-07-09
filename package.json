@@ -1,7 +1,7 @@
 {
   "name": "cd-bgenerator",
   "version": "0.0.0",
-  "description": "Small description for cd-bgenerator goes here",
+  "description": "CdB-generator character",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -41,9 +41,9 @@
     "ember-resolver": "^2.0.3",
     "ember-welcome-page": "^1.0.3",
     "loader.js": "^4.0.10",
-    "semantic-ui-ember": "2.0.0-beta.0"
+    "semantic-ui-ember": "2.0.1"
   },
   "dependencies": {
-    "semantic-ui": "^2.2.4"
+    "ember-inflector": "^2.0.1"
   }
 }
