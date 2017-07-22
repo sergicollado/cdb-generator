@@ -15,4 +15,22 @@
            PD ideales
         </div>
     </div>
+    <div class="ui mini  statistic">
+        <div class="value" {{action "modifyDestiny" 'useDestiny'}}>
+            {{ character.destinyPoints }}
+        </div>
+        <div class="label">
+           Destino
+        </div>
+    </div>
 </div>
+{{#ui-modal name="useDestiny" class="useDestiny" }}
+  <div class="content">
+    <form onsubmit="return false;"  class="ui form">
+      <div class="field">
+        <label>Puntos de Destino</label>
+      {{input type="number" value=character.destinyPoints placeholder="puntos de destino" }}
+      </div>
+    </form>
+  </div>
+{{/ui-modal}}

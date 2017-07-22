@@ -6,8 +6,13 @@ export default Ember.Route.extend({
     },
     model: function(){
         let profile = this.get('store').createRecord('character-profile');
-        return this.get('store').createRecord('character', {
+        let character =  this.get('store').createRecord('character', {
             profile:profile
-        });
+        })
+        const aspectsCount = 3;
+        for (var i = 0; i < aspectsCount; i++) {
+          character.get('aspects').addObject(this.get('store').createRecord('aspect'));
+        }
+        return character;
     }
 });

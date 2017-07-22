@@ -9,5 +9,7 @@ export default DS.Model.extend({
     humanity:DS.attr('number',{ defaultValue: 0}),
     stress:DS.attr('number',{ defaultValue: 0}),
     madness:DS.attr('number',{ defaultValue: 0}),
-    corruption:DS.attr('number',{ defaultValue: 0})
+    corruption:DS.attr('number',{ defaultValue: 0}),
+    aspects: DS.hasMany('aspect'),
+    destinyPoints: DS.attr('number',{ defaultValue: 3})
 });

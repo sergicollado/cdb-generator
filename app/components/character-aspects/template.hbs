@@ -1,0 +1,7 @@
+<form class="ui form">
+  <div class="field">
+      {{#each model as |aspect|}}
+          {{input value=aspect.text placeholder="Aspecto" }}
+      {{/each}}
+  </div>
+</form>

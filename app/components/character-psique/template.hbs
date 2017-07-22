@@ -1,22 +1,25 @@
-<div class="ui  column grid segment">
-  <div class="ui column">
-    <div class="ui list ">
-      <div class="item">
-        <div class="header">Humanidad</div>
-        {{character.humanity}}
+<form class="ui form">
+  <div class="field">
+       <div class="four fields">
+          <div class="field">
+            <label>Humanidad</label>
+          {{input type="number" value=character.humanity placeholder="Humanidad" }}
+          </div>
+
+          <div class="field">
+          <label>Estrés</label>
+          {{input type="number" value=character.stress placeholder="Estrés" }}
+          </div>
+
+          <div class="field">
+            <label>Locura</label>
+          {{input type="number" value=character.madness placeholder="Locura" }}
+          </div>
+
+          <div class="field">
+            <label>Corrupción</label>
+          {{input type="number" value=character.corruption placeholder="Aspecto" }}
+          </div>
       </div>
-      <div class="item">
-        <div class="header">Estrés</div>
-        {{character.stress}}
-      </div>
-      <div class="item">
-        <div class="header">Locura</div>
-        {{character.madness}}
-      </div>
-      <div class="item">
-        <div class="header">Corrupción</div>
-        {{character.corruption}}
-      </div>
-    </div>
   </div>
-</div>
+</form>
