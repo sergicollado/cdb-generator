@@ -1,10 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
+    NTList: Ember.inject.service('technological-levels'),
     base: ['agilidad', 'atención', 'escalar', 'pelea', 'vigor', 'voluntad'],
-    getBase: function(){
-      return this.get('base').map(function(skill){
-          return this.get('store').createRecord('skill',{name:skill,points:0});
-      });
+    getOptionalSkillsByNT: function(NT) {
+      return this.get('NTList.skills')[NT];
     }
 });

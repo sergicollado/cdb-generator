@@ -1,1 +1,5 @@
-{{yield}}
+{{log 'character:' character}}
+{{#each character.skills as |skill|}}
+    {{skill.name}}
+    {{skill.PD}}
+{{/each}}

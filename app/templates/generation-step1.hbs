@@ -27,11 +27,18 @@
   <div class="content">
     {{character-psique character=model}}
   </div>
+
   <div class="title">
     Aspectos
   </div>
   <div class="content">
     {{character-aspects model=model.aspects}}
+  </div>
+  <div class="title">
+    Habilidades
+  </div>
+  <div class="content">
+    {{skill-list character=model}}
   </div>
 {{/ui-accordion}}
 {{!-- {{added-templates templates=model.templates}} --}}

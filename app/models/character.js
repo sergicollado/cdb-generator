@@ -11,5 +11,6 @@ export default DS.Model.extend({
     madness:DS.attr('number',{ defaultValue: 0}),
     corruption:DS.attr('number',{ defaultValue: 0}),
     aspects: DS.hasMany('aspect'),
-    destinyPoints: DS.attr('number',{ defaultValue: 3})
+    destinyPoints: DS.attr('number',{ defaultValue: 3}),
+    skills: DS.hasMany('skill'),
 });

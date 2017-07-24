@@ -12,11 +12,31 @@ export default Ember.Service.extend({
         ['supervivencia']],
     NT6: [
         ['armas arrojadizas', 'armas cortas', 'armas largas', 'etiqueta'],
-        ['conocimiento (Arte)','conocimiento (Arte)','ciencia (Biología)', 'ciencia (Física)', 'ciencia (Química)', 'computadora'],
+        ['conocimiento(Arte)','conocimiento (Historia)','ciencia (Biología)', 'ciencia (Física)', 'ciencia (Química)', 'computadora'],
         ['conducir vehículos (Ligeros)']],
     NT7To10: [
         ['armas cortas', 'armas largas', 'computadora','comunicaciones', 'etiqueta','sensores'],
-        ['conocimiento ()', 'ciencia()'],
+        [ 'conocimiento (Arte)',
+          'conocimiento (Geografía)',
+          'conocimiento (Historia)',
+          'conocimiento (Leyes)',
+          'conocimiento (Lingüista)',
+          'conocimiento (Psicología)',
+          'conocimiento (Saber Arcano)',
+          'conocimiento (Sociología)',
+          'conocimiento (Teología)',
+          'ciencia (Biología)',
+          'ciencia (Física)',
+          'ciencia (Forense)',
+          'ciencia (Genética)',
+          'ciencia (Geología)',
+          'ciencia (informática)',
+          'ciencia (Ingeniería)',
+          'ciencia (Matemáticas)',
+          'ciencia (Medicina)',
+          'ciencia (Química)',
+          'ciencia (Robótica)',
+          'ciencia (Xenología)'],
         ['conducir vehículos(Ligeros)', 'pilotar (Aeronave)', 'pilotar (Astronave)']
     ]}
 });

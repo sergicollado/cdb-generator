@@ -2,6 +2,7 @@
   <div class="column">
     <div class="field">
       <label>Nivel tecnológico</label>
+      {{character.NT}}
       {{#ui-dropdown class="selection ui input fluid" onChange=(action (mut character.NT))}}
           <div class="default text">Nivel tecnológico</div>
           <i class="dropdown icon"></i>
