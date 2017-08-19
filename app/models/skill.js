@@ -4,6 +4,7 @@ export default DS.Model.extend({
     character: DS.hasMany('character'),
     name:DS.attr('string'),
     level:DS.attr('number'),
+    type: DS.attr('string', {defaultValue: 'OTHERS_SKILLS'}),
     PD: Ember.computed('isBase', 'level', function() {
       let cost = 0;
       if( !this.get('isBase')){

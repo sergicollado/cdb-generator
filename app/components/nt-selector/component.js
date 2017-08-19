@@ -8,19 +8,18 @@ export default Ember.Component.extend({
       this._super(...arguments);
       let store = this.get('store');
       let skills = this.get('character.skills');
-      this.get('skillsServices').base.forEach(function(skill){
-          let sk = store.createRecord('skill',{name:skill,level:0, isBase: true});
-          skills.addObject(sk);
-      });
+      let skillServices = this.get('skillsServices');
+      skillServices.addBaseSkills(skills);
+    },
+    NTChange: Ember.observer('character.NT', function() {
+      let skills = this.get('character.skills');
+      let skillServices = this.get('skillsServices');
+      skillServices.cleanNTSkills(skills);
+      let newSkills = this.get('skillsServices').getOptionalSkillsByNT(this.get('character.NT'))
 
-    }
-    // NTChange: Ember.observer('character.NT', function() {
-    //   console.log('NTChange');
-    //   let skills = this.get('character.skills');
-    //   debugger
-    //   skills.clear();
-    //   this.get('skillsServices').getOptionalSkillsByNT(this.get('currentNT')).forEach(function(skillName){
-    //     skills.addObject(this.get('store').createRecord('skill'),{name: skillName,level: 0})
-    //   });
-    //  })
+      let store = this.get('store');
+      newSkills.forEach(function(skillName){
+        skills.addObject(store.createRecord('skill',{name: skillName[0],level: 0, type: skillServices.NT_SKILL}))
+      });
+     })
 });

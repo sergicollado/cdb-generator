@@ -1,5 +1,21 @@
 {{log 'character:' character}}
+SKILLS<br>
 {{#each character.skills as |skill|}}
+    {{skill.name}}
+    {{skill.PD}}
+{{/each}}
+BASE<br>
+{{#each baseSkills as |skill|}}
+    {{skill.name}}
+    {{skill.PD}}
+{{/each}}
+NT<br>
+{{#each NTSkills as |skill|}}
+    {{skill.name}}
+    {{skill.PD}}
+{{/each}}
+OTHER<br>
+{{#each otherSkills as |skill|}}
     {{skill.name}}
     {{skill.PD}}
 {{/each}}
