@@ -31,13 +31,26 @@ export default Ember.Service.extend({
       });
       skills.removeObjects(NTSkills);
     },
-    getBaseSkills(skills){
+    getBaseSkills: function(skills){
       return skills.filterBy('type', this.get('BASE_SKILL'));
     },
-    getNTSkills(skills){
+    getNTSkills: function(skills){
       return skills.filterBy('type', this.get('NT_SKILL'));
     },
-    getOptionalSkills(skills){
+    getOptionalSkills: function(skills){
       return skills.filterBy('type', this.get('OPTIONAL_SKILLS'));
+    },
+    skillsPD: function(skills){
+      if( skills === undefined ){
+        return 0;
+      }
+
+      let currentPD =  skills.reduce(function(previousValue, item, index, enumerable){
+        if ( item.get('PD') === undefined ){
+          return previousValue;
+        }
+        return previousValue + item.get('PD');
+      }, 0);
+      return currentPD;
     }
 });

@@ -2,6 +2,6 @@
   <td>
     <div class="ui ribbon label">{{skill.name}}</div>
   </td>
-  <td>{{ skill.isTrainning }}</td>
+  <td>{{ui-checkbox label="" checked=skill.isTrainning readonly=isReadOnly onChange=(action  (mut skill.isTrainning) )}}</td>
   <td>{{skill.PD}}</td>
   <td>{{skill.level}}</td>

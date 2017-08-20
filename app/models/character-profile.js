@@ -7,6 +7,7 @@ export default DS.Model.extend({
     nationality:DS.attr(),
     gender:DS.attr(),
     size: DS.attr(),
+    currentPD: DS.attr('number', { defaultValue: 0}),
     freePD:DS.attr(),
     totalPD:DS.attr(),
     appearence:DS.attr(),

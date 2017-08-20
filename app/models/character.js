@@ -15,4 +15,5 @@ export default DS.Model.extend({
     aspects: DS.hasMany('aspect'),
     destinyPoints: DS.attr('number',{ defaultValue: 3}),
     skills: DS.hasMany('skill'),
+    skillsPD: DS.attr('number', { defaultValue: 0}),
 });
