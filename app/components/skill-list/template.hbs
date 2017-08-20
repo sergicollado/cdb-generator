@@ -1,13 +1,47 @@
 {{log 'character:' character}}
+
+
 BASE<br>
-{{#each baseSkills as |skill|}}
-    {{skill-item skill=skill}}
-{{/each}}
+<table class="ui very basic compact unstackable table">
+  <thead>
+    <tr><th class="single line four wide">Habilidades</th>
+    <th class="one wide" >Entrenado</th>
+    <th>PD</th>
+    <th>Nivel</th>
+  </tr></thead>
+  <tbody>
+    {{#each baseSkills as |skill|}}
+        {{skill-item skill=skill}}
+    {{/each}}
+  </tbody>
+</table>
+
 OPTIONAL<br>
-{{#each optinalSkills as |skill|}}
-    {{skill-item skill=skill}}
-{{/each}}
+<table class="ui very basic compact unstackable table">
+  <thead>
+    <tr><th class="single line four wide">Habilidades</th>
+    <th class="one wide">Entrenado</th>
+    <th>PD</th>
+    <th>Nivel</th>
+  </tr></thead>
+  <tbody>
+    {{#each optionalSkills as |skill|}}
+        {{skill-item skill=skill}}
+    {{/each}}
+  </tbody>
+</table>
+
 NT<br>
-{{#each NTSkills as |skill|}}
-    {{skill-item skill=skill}}
-{{/each}}
+<table class="ui very basic compact unstackable table ">
+  <thead>
+    <tr><th class="single line four wide">Habilidades</th>
+    <th class="one wide">Entrenado</th>
+    <th>PD</th>
+    <th>Nivel</th>
+  </tr></thead>
+  <tbody>
+    {{#each NTSkills as |skill|}}
+        {{skill-item skill=skill}}
+    {{/each}}
+  </tbody>
+</table>

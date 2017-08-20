@@ -24,7 +24,7 @@ export default Ember.Component.extend({
         skills.addObject(store.createRecord('skill',{name: skillName[0],level: 0, type: skillServices.OPTIONAL_SKILLS}))
       });
       NTSkills.forEach(function(skillName){
-        skills.addObject(store.createRecord('skill',{name: skillName, type: skillServices.NT_SKILL}))
+        skills.addObject(store.createRecord('skill',{name: skillName , type: skillServices.NT_SKILL}))
       });
      })
 });

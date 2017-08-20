@@ -1,16 +1,25 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
+    skillServices: Ember.inject.service('skills'),
     character: DS.hasMany('character'),
     name:DS.attr('string'),
     level:DS.attr('number'),
-    type: DS.attr('string', {defaultValue: 'OTHERS_SKILLS'}),
-    PD: Ember.computed('isBase', 'level', function() {
+    type: DS.attr('string', {defaultValue: 'NT_SKILL'}),
+    isTrainning : Ember.computed('level', function(){
+      return ( this.get('level') !== undefined);
+    }),
+    PD: Ember.computed('type', 'level', 'skillServices', function() {
+      if ( this.get('level') === undefined){
+        return 0;
+      }
+      let skillServices = this.get('skillServices');
+
       let cost = 0;
-      if( !this.get('isBase')){
+      if( this.get('type') === skillServices.NT_SKILL){
         cost +=3;
       }
-      let costs = {
+      let baseCost = {
         0:0,
         1:2,
         2:6,
@@ -21,9 +30,8 @@ export default DS.Model.extend({
         7:56,
         8:72
       }
-      if (this.get('level')){
-        cost +=costs[this.get('level')];
-      }
+      cost += baseCost[this.get('level')];
+
       return cost;
     })
 });

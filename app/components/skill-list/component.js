@@ -17,10 +17,12 @@ export default Ember.Component.extend({
     return this.get('skillsService').getNTSkills(skills);
   }),
   optionalSkills:Ember.computed('character.skills', 'skillsServices', function(){
+
     let skills = this.get('character.skills');
     if (! skills){
       return;
     }
+
     return this.get('skillsService').getOptionalSkills(skills);
   })
 });
