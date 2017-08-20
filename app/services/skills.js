@@ -4,11 +4,15 @@ export default Ember.Service.extend({
     store: Ember.inject.service(),
     BASE_SKILL: 'BASE_SKILL',
     NT_SKILL: 'NT_SKILL',
-    OTHERS_SKILLS: 'OTHERS_SKILLS',
+    OPTIONAL_SKILLS: 'OPTIONAL_SKILLS',
     NTList: Ember.inject.service('technological-levels'),
     base: ['agilidad', 'atención', 'escalar', 'pelea', 'vigor', 'voluntad'],
+
     getOptionalSkillsByNT: function(NT) {
-      return this.get('NTList.skills')[NT];
+      return this.get('NTList.optionalSkillsByNT')[NT];
+    },
+    getNTSkillsByNT(NT){
+      return this.get('NTList.skillsByNT')[NT];
     },
     addBaseSkills: function(skills){
       let store = this.get('store');
@@ -20,9 +24,11 @@ export default Ember.Service.extend({
     },
     cleanNTSkills: function(skills){
       let store = this.get('store');
-      let NTType = this.get('NT_SKILL');
+      let baseType = this.get('BASE_SKILL');
 
-      let NTSkills = skills.filterBy('type', NTType);
+      let NTSkills = skills.filter(function(item, index, enumerable){
+          return (item.get('type') !==  baseType);
+      });
       skills.removeObjects(NTSkills);
     },
     getBaseSkills(skills){
@@ -31,7 +37,7 @@ export default Ember.Service.extend({
     getNTSkills(skills){
       return skills.filterBy('type', this.get('NT_SKILL'));
     },
-    getOtherSkills(skills){
-      return skills.filterBy('type', this.get('OTHERS_SKILLS'));
+    getOptionalSkills(skills){
+      return skills.filterBy('type', this.get('OPTIONAL_SKILLS'));
     }
 });

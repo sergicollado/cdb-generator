@@ -14,12 +14,17 @@ export default Ember.Component.extend({
     NTChange: Ember.observer('character.NT', function() {
       let skills = this.get('character.skills');
       let skillServices = this.get('skillsServices');
+
       skillServices.cleanNTSkills(skills);
-      let newSkills = this.get('skillsServices').getOptionalSkillsByNT(this.get('character.NT'))
+      let optionalSkills = skillServices.getOptionalSkillsByNT(this.get('character.NT'));
+      let NTSkills = skillServices.getNTSkillsByNT(this.get('character.NT'));
 
       let store = this.get('store');
-      newSkills.forEach(function(skillName){
-        skills.addObject(store.createRecord('skill',{name: skillName[0],level: 0, type: skillServices.NT_SKILL}))
+      optionalSkills.forEach(function(skillName){
+        skills.addObject(store.createRecord('skill',{name: skillName[0],level: 0, type: skillServices.OPTIONAL_SKILLS}))
+      });
+      NTSkills.forEach(function(skillName){
+        skills.addObject(store.createRecord('skill',{name: skillName, type: skillServices.NT_SKILL}))
       });
      })
 });
