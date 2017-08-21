@@ -11,7 +11,6 @@ export default DS.Model.extend({
       return ( this.get('level') !== undefined);
     }),
     PD: Ember.computed('type', 'level', 'skillServices', function() {
-      console.log('current level',this.get('level'));
       if ( this.get('level') === undefined){
         return 0;
       }
