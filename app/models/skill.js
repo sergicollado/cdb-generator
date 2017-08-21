@@ -5,11 +5,13 @@ export default DS.Model.extend({
     character: DS.hasMany('character'),
     name:DS.attr('string'),
     level:DS.attr('number'),
+    mod:DS.attr('number', {defaultValue: 0}),
     type: DS.attr('string', {defaultValue: 'NT_SKILL'}),
     isTrainning : Ember.computed('level', function(){
       return ( this.get('level') !== undefined);
     }),
     PD: Ember.computed('type', 'level', 'skillServices', function() {
+      console.log('current level',this.get('level'));
       if ( this.get('level') === undefined){
         return 0;
       }
@@ -31,6 +33,9 @@ export default DS.Model.extend({
         8:72
       }
       cost += baseCost[this.get('level')];
+      if(isNaN( cost )){
+        return 0;
+      }
 
       return cost;
     })

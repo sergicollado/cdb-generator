@@ -18,7 +18,7 @@ export default Ember.Service.extend({
       let store = this.get('store');
       let baseType = this.get('BASE_SKILL');
       this.get('base').forEach(function(skill){
-          let sk = store.createRecord('skill',{name:skill,level:0, isBase: true, type: baseType });
+          let sk = store.createRecord('skill',{name:skill,level:0, type: baseType });
           skills.addObject(sk);
       });
     },
@@ -35,7 +35,13 @@ export default Ember.Service.extend({
       return skills.filterBy('type', this.get('BASE_SKILL'));
     },
     getNTSkills: function(skills){
-      return skills.filterBy('type', this.get('NT_SKILL'));
+      let NTSkills = skills.filterBy('type', this.get('NT_SKILL'));
+      let onlyOptional = skills.filterBy('type', this.get('OPTIONAL_SKILLS'));
+
+
+      return NTSkills.reject(function(optional){
+        return onlyOptional.findBy('name',optional.get('name'));
+      });
     },
     getOptionalSkills: function(skills){
       return skills.filterBy('type', this.get('OPTIONAL_SKILLS'));

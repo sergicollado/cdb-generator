@@ -8,7 +8,6 @@ export default Ember.Component.extend({
     return type !== this.get('skillsService').NT_SKILL;
   }),
   trainningChange: Ember.observer('skill.isTrainning', function() {
-      console.log('checking');
       if(this.get('skill.isTrainning')){
         this.set('skill.level',0);
       }else{

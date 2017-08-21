@@ -4,4 +4,7 @@
   </td>
   <td>{{ui-checkbox label="" checked=skill.isTrainning readonly=isReadOnly onChange=(action  (mut skill.isTrainning) )}}</td>
   <td>{{skill.PD}}</td>
-  <td>{{skill.level}}</td>
+<td class="ui mini  input">
+      {{input type="number" min="0" max="8" value=skill.level placeholder="level" }}
+</td>
+<td>{{skill.mod}}</td>

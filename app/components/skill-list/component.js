@@ -27,6 +27,7 @@ export default Ember.Component.extend({
   }),
   skillUpdate: Ember.observer('character.skills.@each.PD', function() {
     let character = this.get('character');
-    character.set('skillsPD',this.get('skillsService').skillsPD(this.get('skills')));
+    let PD = this.get('skillsService').skillsPD(this.get('character.skills'));
+    character.set('skillsPD', PD);
   })
 });
