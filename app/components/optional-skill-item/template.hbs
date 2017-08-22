@@ -1,0 +1,21 @@
+<td>
+  <div class="ui ribbon label">
+    {{#ui-dropdown class="selection ui mini input" onChange=(action (mut skill.name))}}
+            {{skill.name}}
+            <i class="dropdown icon"></i>
+            <div class="menu">
+            {{#each-in currentOptions as |index name|}}
+                <div class="item" data-value="{{name}}">
+                {{name}}
+                </div>
+            {{/each-in}}
+            </div>
+        {{/ui-dropdown}}
+  </div>
+</td>
+<td>{{ui-checkbox label="" checked=true readonly=true }}</td>
+<td>{{skill.PD}}</td>
+<td class="ui mini  input">
+    {{input type="number" min="0" max="8" value=skill.level placeholder="level" }}
+</td>
+<td>{{skill.mod}}</td>

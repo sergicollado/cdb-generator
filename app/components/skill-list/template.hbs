@@ -30,8 +30,8 @@
       <th class="one wide">Mod</th>
     </tr></thead>
     <tbody>
-      {{#each optionalSkills as |skill|}}
-          {{skill-item skill=skill}}
+      {{#each optionalSkills as |skill index|}}
+          {{optional-skill-item skill=skill options=skillOptions currentSkill=index}}
       {{/each}}
     </tbody>
   </table>

@@ -2,6 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   skillsService: Ember.inject.service('skills'),
+  skillOptions: Ember.computed('character.NT', 'skillsService', function(){
+    let skillService = this.get('skillsService');
+    return skillService.getOptionalSkillsByNT(this.get('character.NT'));
+  }),
   baseSkills:Ember.computed('character.skills', 'skillsServices', function(){
     let skills = this.get('character.skills');
     if (! skills){
@@ -9,7 +13,8 @@ export default Ember.Component.extend({
     }
     return this.get('skillsService').getBaseSkills(skills);
   }),
-  NTSkills:Ember.computed('character.skills', 'skillsServices', function(){
+  NTSkills:Ember.computed('character.skills', 'skillsServices', 'character.skills.@each.name', function(){
+    console.log('update optional');
     let skills = this.get('character.skills');
     if (! skills){
       return;
