@@ -5,5 +5,7 @@ export default DS.Model.extend({
     name:DS.attr('string'),
     description: DS.attr('string'),
     requirements: DS.attr(),
-    PD: DS.attr('number')
+    PD: DS.attr('number'),
+    requirementTarget: DS.attr('string'),
+    requirementRule: DS.attr('string')
 });

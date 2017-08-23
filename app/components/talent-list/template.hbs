@@ -1,1 +1,54 @@
-{{yield}}
+<table class="ui very basic compact selectable table">
+  <thead>
+    <tr><th class="four wide">Talentos</th>
+    <th class="six wide" >Descripción</th>
+    <th class="tree wide">Requisitos</th>
+    <th class="one wide" >PD</th>
+  </tr></thead>
+  <tbody>
+    {{#each character.talents as |talent|}}
+    <tr class="">
+      <td>
+        <div class="ui ribbon label">{{talent.name}}</div>
+        {{#if talent.Selected }}
+          <i class="checkmark box icon"></i>
+        {{/if}}
+      </td>
+      <td>{{talent.description}}</td>
+      <td>{{talent.requirements}}</td>
+      <td>{{talent.PD}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<button class="ui right labeled icon button " {{action "toogleDataTalents"}}>
+   <i class="plus icon"></i>
+   Añadir
+</button>
+{{#if isShowingTalentSelector}}
+<div class="ui small header">Talentos a seleccionar</div>
+  <table class="ui very basic compact selectable table">
+    <thead>
+      <tr><th class="four wide">Talentos</th>
+      <th class="six wide" >Descripción</th>
+      <th class="tree wide">Requisitos</th>
+      <th class="one wide" >PD</th>
+    </tr></thead>
+    <tbody>
+      {{#each dataTalents as |talent|}}
+      <tr class="" {{action "setTalent" talent}}>
+        <td>
+          <div class="ui ribbon label">{{talent.name}}</div>
+          {{#if talent.Selected }}
+            <i class="checkmark box icon"></i>
+          {{/if}}
+        </td>
+        <td>{{talent.description}}</td>
+        <td>{{talent.requirements}}</td>
+        <td>{{talent.PD}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{/if}}

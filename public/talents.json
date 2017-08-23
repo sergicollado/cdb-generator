@@ -1,0 +1,792 @@
+[
+  {
+    "name": "Afortunado",
+    "PD": 8,
+    "description": "Con 1 nivel repite 1 tirada cada 4 horas de partida. Con 2 niveles la repite cada 2 horas de partida",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Ambidiestro",
+    "PD": 9,
+    "description": "Hace que desaparezcan los negativos por llevar un arma en cada mano",
+    "target": "",
+    "requirements": "Entrenado en armas cuerpo a cuerpo o distancia",
+    "requirementTarget": "armas a cuerpo a cuerpoORarmas a distancia",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Artista Marcial",
+    "PD": 8,
+    "description": "Permite realizar las Maniobras Proyectar, Usar la Fuerza de Otro, Bloqueo y Golpe en el Aire. Además las maniobras Agarrón, Asfixiar, Desarmar, Escapar y Presa cuestan 1 AC menos",
+    "target": "",
+    "requirements": "Tener la Habilidad Pelea a +3 o más.",
+    "requirementTarget": "pelea",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Atractivo",
+    "PD": 6,
+    "description": "+1 a las tiradas de las Habilidades Persuadir y Engañar por nivel con personas que se puedan sentir atraídas, hasta un máximo de 2 niveles.",
+    "target": "persuadirANDengañar",
+    "requirements": "Entrenado en Persuadir y Engañar.",
+    "requirementTarget": "persuadir",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Caes como un Gato",
+    "PD": 4,
+    "description": "Por cada nivel de Agilidad por encima de +2 (inclusive) sustrae 5 metros a la caída para calcular el daño",
+    "target": "",
+    "requirements": "Tener la Habilidad Agilidad a +3 o más.",
+    "requirementTarget": "agilidad",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Carismático",
+    "PD": 7,
+    "description": "+1 a las tiradas de las Habilidades Liderazgo y Persuadir por nivel cuando el carisma puede tener efecto, hasta un máximo de 3 niveles",
+    "target": "",
+    "requirements": "Entrenado en Liderazgo y Persuadir.",
+    "requirementTarget": "persuadirANDliderazgo",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Científico Nato",
+    "PD": 8,
+    "description": "Todas las habilidades de Ciencia se consideran a 0 cuando se realicen tiradas, y se consideran Entrenadas a tal efecto",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Comerciante",
+    "PD": 5,
+    "description": "+1 a las tiradas de la Habilidad Persuadir cuando negocie, compre, venda, regatee…",
+    "target": "",
+    "requirements": "Tener la Habilidad Persuadir a +3 o más",
+    "requirementTarget": "persuadir",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Concentrado",
+    "PD": 6,
+    "description": "Gana un +1 a cualquier tarea prolongada, pero no se percata de las cosas a su alrededor, por lo que mientras desarrolla la tarea tiene un -2 a las tiradas de Atención",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Conductor Alta Velocidad",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Conducir Vehículo (Ruedas) por nivel cuando conduzca coches de carreras o participe en persecuciones, hasta un máximo de 3 niveles",
+    "target": "",
+    "requirements": "Entrenado en Conducir Vehículo (Ruedas).",
+    "requirementTarget": "conducir vehículo (ruedas)",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Conductor Militar",
+    "PD": 5,
+    "description": "+1 a las tiradas de las Habilidades Conducir Vehículo (Ligero) y Conducir Vehículo (Pesado) por nivel cuando se conduzca en combate, hasta un máximo de 2 niveles",
+    "target": "",
+    "requirements": "Entrenado en Conducir Vehículo (Ligero) y Conducir Vehículo (Pesado).",
+    "requirementTarget": "conducir vehículo (ligero)ANDconducir vehiculo (pesado)",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Contactos",
+    "PD": 5,
+    "description": "Contactos proporciona la posibilidad de pedirle 2 veces por partida a un contacto (o a 2 contactos distintos) que le consiga información o que le haga un favor (mientras no sea peligroso) al personaje",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Curación Rápida",
+    "PD": 8,
+    "description": "El personaje realiza las tiradas de Curación Natural en la mitad de tiempo.",
+    "target": "",
+    "requirements": "Tener la Habilidad Vigor a +3 o más.",
+    "requirementTarget": "vigor",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Desenvainado Rápido",
+    "PD": 3,
+    "description": "Permite desenvainar espadas por 1 AC",
+    "target": "",
+    "requirements": "Tener Armas Cuerpo a Cuerpo o Armas a 1 Mano a 3+ o más",
+    "requirementTarget": "armas a cuerpo a cuerpoORarmas a 1 mano",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Detective Privado",
+    "PD": 5,
+    "description": "+1 a las tiradas de la Habilidad Atención cuando investigue algo que tenga que ver con una “investigación activa”. Se puede adquirir 3 veces, añadiendo una “investigación activa” cada vez",
+    "target": "",
+    "requirements": "Tener la Habilidad Atención a +3 o más",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Antropología",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Antropología en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Conocimiento (Antropología) a +3 o más",
+    "requirementTarget": "atención",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Arte",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Conocimiento (Arte) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Conocimiento (Arte) a +3 o más",
+    "requirementTarget": "conocimiento (arte)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Biología",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Biología) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Biología) a +3 o más",
+    "requirementTarget": "ciencia (biología)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Física",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Física) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Física) a +3 o más",
+    "requirementTarget": "ciencia (física)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Forense",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Forense) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Forense) a +3 o más",
+    "requirementTarget": "ciencia (forense)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Genética",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Genética) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Genética) a +3 o más",
+    "requirementTarget": "ciencia (genética)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en \nGeografía",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Conocimiento (Geografía) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Conocimiento (Geografía) a +3 o más",
+    "requirementTarget": "conocimiento (geografía)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Geología",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Geología) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Geología) a +3 o más",
+    "requirementTarget": "ciencia (geología)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Historia",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Historia en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Conocimiento (Historia) a +3 o más",
+    "requirementTarget": "conocimiento (historia)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en \nInformática",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Informática) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Informática) a +3 o más",
+    "requirementTarget": "ciencia (informática)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en \nIngeniería",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Ingeniería) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Ingeniería) a +3 o más",
+    "requirementTarget": "ciencia (ingeniería)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Leyes",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Conocimiento (Leyes) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Conocimiento (Leyes) a +3 o más",
+    "requirementTarget": "conocimiento (leyes)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en \nLingüística",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Conocimiento (Lingüística) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Conocimiento (Lingüística) a +3 o más",
+    "requirementTarget": "conocimiento (lingüística)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en \nMatemáticas",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Matemáticas) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Matemáticas) a +3 o más",
+    "requirementTarget": "ciencia (matemáticas)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en \nMedicina",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Medicina) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Medicina) a +3 o más",
+    "requirementTarget": "ciencia (medicina)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en \nPsicología",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Conocimiento (Psicología) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Conocimiento (Psicología) a +3 o más",
+    "requirementTarget": "conocimiento (psicología)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Química",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Química) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Química) a +3 o más",
+    "requirementTarget": "ciencia (química)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en Robótica",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Robótica) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Robótica) a +3 o más",
+    "requirementTarget": "ciencia (robótica)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en \nSociología",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Conocimiento (Sociología) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Conocimiento (Sociología) a +3 o más",
+    "requirementTarget": "conocimiento (sociología)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Doctorado en \nXenología",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Ciencia (Xenología) en el campo especializado, pudiendo especializarse en tres campos distintos",
+    "target": "",
+    "requirements": "Tener la Habilidad Ciencia (Xenología) a +3 o más",
+    "requirementTarget": "ciencia (xenología)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Enamorado de Otra Era",
+    "PD": 7,
+    "description": "Escoge una época o cultura con un NT inferior. No tiene negativos usando objetos de esa cultura y época",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Entrenado en Otra Gravedad",
+    "PD": 7,
+    "description": "Escoge una Gravedad. Ignoras los negativos a Agilidad de dicha Gravedad",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Equilibrio Perfecto",
+    "PD": 4,
+    "description": "No necesita hacer tiradas de Agilidad para mantener el equilibrio siempre que la dificultad sea 13 o inferior",
+    "target": "",
+    "requirements": "Tener la Habilidad Agilidad a +3 o más.",
+    "requirementTarget": "agilidad",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Escala (Positiva)",
+    "PD": 7,
+    "description": "Cada +1 de Escala proporciona +1 a Daño cuerpo a cuerpo  y +1 a Resistencia al Daño, pero el nivel de dificultad para impactarle (ya sea cuerpo a cuerpo o a distancia) se reduce en uno por cada 2 niveles de Escala",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Esquiva Intuitiva",
+    "PD": 6,
+    "description": "El personaje puede esquivar aunque no le queden AC, pero usando las AC del turno siguiente",
+    "target": "",
+    "requirements": "Entrenado en Esquivar",
+    "requirementTarget": "esquivar",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Estratega",
+    "PD": 4,
+    "description": "+1 a todas las Tiradas de la Habilidad Liderazgo que se hagan para administrar y manejar una nación, poblado e incluso unidad militar, siempre que no se trate de un uso de Liderazgo en combate",
+    "target": "",
+    "requirements": "Tener la Habilidad Liderazgo a +3 o más",
+    "requirementTarget": "liderazgo",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Favores debidos",
+    "PD": 7,
+    "description": "Al adquirir este Talento se obtienen 10 favores para “gastar” a lo largo de las partidas. Los favores pueden permitir acceso a lugares o información a los que de otra forma no se tendría acceso. Incluso pueden hacer que la persona que devuelve el favor se arriesgue por el personaje",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Furtivo",
+    "PD": 6,
+    "description": "+1 a las tiradas de la Habilidad Sigilo por nivel cuando se intente esconder, hasta un máximo de 3 niveles",
+    "target": "",
+    "requirements": "Entrenado en Sigilo.",
+    "requirementTarget": "sigilo",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Gun Fu",
+    "PD": 6,
+    "description": "Permite desenvainar pistolas por 1 AC y recargarlas por 2 AC",
+    "target": "",
+    "requirements": "Tener la Habilidad Armas Cortas o Armas de Pólvora a 3+ o más",
+    "requirementTarget": "armas cortasORarmas de pólvora",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Gun Kata",
+    "PD": 8,
+    "description": "Permite usar Pistolas o Rifles costando 1 AC menos cada ataque, y da acceso a algunas Maniobras especiales",
+    "target": "",
+    "requirements": "Tener la Habilidad Armas Cortas, Armas de Pólvora o Armas Largas a 3+ o más",
+    "requirementTarget": "armas cortasORarmas de pólvoraORarmas largas",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Hacker",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Computadora por nivel cuando intente romper sistemas de seguridad informáticos, hasta un máximo de 3 niveles",
+    "target": "",
+    "requirements": "Entrenado en \nComputadora.",
+    "requirementTarget": "computadora",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Infatigable",
+    "PD": 9,
+    "description": "El primer nivel permite ignorar los negativos por estar Aturdido. El segundo nivel permite ignorar los negativos por estar Gravemente Aturdido",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Investigador",
+    "PD": 5,
+    "description": "+1 a la Habilidad Atención (para búsquedas en bibliotecas y búsquedas físicas) y  Computadora (para búsquedas informáticas) cuando busque e investigue información relacionada con una Habilidad de Ciencia (Especialidad) o Conocimiento (Especialidad) que se tenga Entrenada",
+    "target": "",
+    "requirements": "Entrenado en una Habilidad de Ciencia o Conocimiento, además de Atención. Computadora es requisito si NT 6+",
+    "requirementTarget": "atenciónANDcomputadora",
+    "requirementRule": "KNOWLEDGE_COMPUTER",
+    "mod": ""
+  },
+  {
+    "name": "Maestría en Arma y Escudo",
+    "PD": 6,
+    "description": "Cuando lleve Arma y Escudo no tiene el -1 para atacar con el Arma.",
+    "target": "",
+    "requirements": "Entrenado en habilidad de combate cuerpo a cuerpo",
+    "requirementTarget": "combate cuerpo a cuerpo",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Maestro de              Esgrima",
+    "PD": 8,
+    "description": "Permite usar Armas a 1 Mano o Armas Cuerpo a Cuerpo costando 1 AC menos cada ataque, y da acceso a algunas Maniobras especiales",
+    "target": "",
+    "requirements": "Tener Habilidad Armas a 1 Mano o Armas Cuerpo a Cuerpo a 3+ o más",
+    "requirementTarget": "armas a 1 mano o armas cuerpo a cuerpo",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Maestro del Saber",
+    "PD": 8,
+    "description": "Todas las habilidades de Conocimientos se consideran a 0 cuando se realicen tiradas, y se consideran Entrenadas a tal efecto",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Manitas",
+    "PD": 6,
+    "description": "+1 a las tiradas de las Habilidades Electrónica y Mecánica por nivel cuando se utilicen para Reparar, hasta un máximo de 3 niveles",
+    "target": "",
+    "requirements": "Entrenado en \nElectrónica y Mecánica.",
+    "requirementTarget": "electrónicaANDmecánica",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Memoria Eidética",
+    "PD": 6,
+    "description": "El personaje tiene una memoria perfecta. Recuerda todo lo que vea y lea durante la partida. Nunca olvida una cara, un nombre, cómo llegar a un sitio, etc.",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Nativo de NT superior",
+    "PD": 9,
+    "description": "El personaje proviene de una época o cultura con un NT superior. No tiene negativos usando objetos de esa cultura y época.",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "NT elevado",
+    "PD": 3,
+    "description": "El personaje está entrenado en el uso de una Habilidad con un NT superior al de su propia sociedad o cultura.",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Orientación",
+    "PD": 4,
+    "description": "+1 por nivel (hasta un máximo de 3) a cualquier tirada de Navegación que haga para saber dónde se encuentra, aunque no tenga referencias claras",
+    "target": "",
+    "requirements": "Entrenado en \nNavegación.",
+    "requirementTarget": "navegación",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Piloto de Combate",
+    "PD": 5,
+    "description": "+1 a las tiradas de las Habilidades Pilotar (Aeronaves) y Pilotar (Astronaves) por nivel cuando se pilote en combate, hasta un máximo de 2 niveles",
+    "target": "",
+    "requirements": "Entrenado en Pilotar (Aeronaves) y Pilotar (Astronaves).",
+    "requirementTarget": "pilotar (aeronaves)ANDpilotar (astronaves)",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Piloto de Pruebas",
+    "PD": 4,
+    "description": "+1 a tiradas de Habilidad Pilotar (Aeronaves) por nivel pilotando aviones experimentales o supersónicos, hasta un máximo de 3 niveles",
+    "target": "",
+    "requirements": "Entrenado en Pilotar (Aeronaves).",
+    "requirementTarget": "pilotar (aeronaves)",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Psicoanalista",
+    "PD": 6,
+    "description": "+1 a cualquier tirada de Conocimiento (Psicología) que haga para hacer perder a otras personas Puntos de Estrés o Locura",
+    "target": "",
+    "requirements": "Tener la Habilidad Conocimiento (Psicología) a +3 o más y estar Entrenado en Averiguar Intenciones y Persuadir",
+    "requirementTarget": "conocimiento (psicología)ANDaveriguar intenciones",
+    "requirementRule": "MORE_THAN_3_TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Puntería Zen",
+    "PD": 4,
+    "description": "El personaje puede moverse en el mismo turno en el que apunta, siempre que tenga AC disponibles",
+    "target": "",
+    "requirements": "Entrenado en Habilidad de ataque a distancia",
+    "requirementTarget": "",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Puños/Pies  de Acero",
+    "PD": 7,
+    "description": "+1 Daño por nivel con puñetazos o patadas, hasta un máximo de 3 niveles en cada uno",
+    "target": "",
+    "requirements": "Entrenado en Pelea.",
+    "requirementTarget": "pelea",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Rango",
+    "PD": "Variable",
+    "description": "Cada nivel es un rango superior en una organización militar, para-militar o policial",
+    "target": "",
+    "requirements": "Según Rango",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Rapidez",
+    "PD": 9,
+    "description": "+3 AC por nivel, hasta un máximo de 2 niveles",
+    "target": "",
+    "requirements": "Entrenado en Agilidad y Atención.",
+    "requirementTarget": "agilidadANDatención",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Reflejos Rápidos",
+    "PD": 7,
+    "description": "+1 INI por nivel, hasta un máximo de 3 niveles",
+    "target": "",
+    "requirements": "Entrenado en Agilidad y Atención.",
+    "requirementTarget": "agilidadANDatención",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Resistencia al Daño",
+    "PD": 7,
+    "description": "+1 Resistencia al Daño (RD) por nivel, hasta un máximo de 3 niveles",
+    "target": "",
+    "requirements": "Entrenado en Vigor.",
+    "requirementTarget": "vigor",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Rico y Poderoso",
+    "PD": 10,
+    "description": "El personaje tiene más dinero inicial, y una vez por partida puede pedirle un favor (caro o difícil, pero nunca peligroso o inviable políticamente) a uno de sus amigos en las altas esferas",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Seductor",
+    "PD": 5,
+    "description": "+1 a las tiradas de la Habilidad Persuadir cuando se intente seducir si el objetivo de la seducción se siente atraído por las personas del sexo del personaje Seductor",
+    "target": "",
+    "requirements": "Entrenado en Persuadir",
+    "requirementTarget": "persuadir",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Sentidos Agudos",
+    "PD": 5,
+    "description": "Escoge un sentido. Por cada nivel se obtiene un +1 a las tiradas de Atención en las que ese sentido afecte. Se puede adquirir para varios sentidos, pudiendo adquirir 2 niveles para cada sentido",
+    "target": "",
+    "requirements": "Entrenado en Atención.",
+    "requirementTarget": "atención",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Sentir el Peligro",
+    "PD": 4,
+    "description": "Cuando el personaje con este Talento esté bajo un peligro inminente el DJ hará una tirada de Atención por ese personaje, y con un resultado 13 o más le avisará",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Sigiloso",
+    "PD": 6,
+    "description": "+1 a las tiradas de la Habilidad Sigilo por nivel cuando se intente mover en silencio, hasta un máximo de 3 niveles",
+    "target": "",
+    "requirements": "Entrenado en Sigilo.",
+    "requirementTarget": "sigilo",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Sin Miedo",
+    "PD": 5,
+    "description": "+2 a las Tiradas de Estrés y Locura",
+    "target": "",
+    "requirements": "Entrenado en Voluntad",
+    "requirementTarget": "voluntad",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Superviviente (Entorno)",
+    "PD": 4,
+    "description": "Escoge un Entorno. +1 a las tiradas de Supervivencia realizadas en ese entorno",
+    "target": "",
+    "requirements": "Tener la Habilidad Supervivencia a +3 o más.",
+    "requirementTarget": "supervivencia",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Táctico",
+    "PD": 4,
+    "description": "+1 a todas las Tiradas de Liderazgo que haga cuando se encuentre en combate liderando sus tropas",
+    "target": "",
+    "requirements": "Entrenado en Liderazgo",
+    "requirementTarget": "liderazgo",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Teólogo",
+    "PD": 4,
+    "description": "+1 a las tiradas de la Habilidad Teología en la religión escogida, pudiendo especializarse en tres religiones distintas",
+    "target": "",
+    "requirements": "Tener la Habilidad Conocimiento (Teología) a +3 o más",
+    "requirementTarget": "conocimiento (teología)",
+    "requirementRule": "MORE_THAN_3",
+    "mod": ""
+  },
+  {
+    "name": "Tolerancia al Dolor",
+    "PD": 9,
+    "description": "El primer nivel permite ignorar los negativos por estar Herido. El segundo nivel permite ignorar los negativos por estar Gravemente Herido",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Torturador",
+    "PD": 5,
+    "description": "+1 a las tiradas de las Habilidades Intimidar cuando se use la violencia para extraer información",
+    "target": "",
+    "requirements": "Entrenado en Intimidar",
+    "requirementTarget": "intimidar",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Veloz",
+    "PD": 7,
+    "description": "+1 MOV por nivel, hasta un máximo de 2 niveles",
+    "target": "",
+    "requirements": "Entrenado en Agilidad y Atención.",
+    "requirementTarget": "agilidadANDatención",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  },
+  {
+    "name": "Veterano",
+    "PD": 13,
+    "description": "Todas las habilidades que se tengan a No entrenado se consideran a 0 cuando se realicen tiradas, y se consideran Entrenadas a tal efecto",
+    "target": "",
+    "requirements": "",
+    "requirementTarget": "",
+    "requirementRule": "",
+    "mod": ""
+  },
+  {
+    "name": "Voluntad de Hierro",
+    "PD": 5,
+    "description": "+1 a las Tiradas de Voluntad (que no sean Tiradas de Estrés, Locura o Corrupción) por nivel, hasta un máximo de 3 niveles",
+    "target": "",
+    "requirements": "Entrenado en Voluntad.",
+    "requirementTarget": "voluntad",
+    "requirementRule": "TRAINNING",
+    "mod": ""
+  }
+]

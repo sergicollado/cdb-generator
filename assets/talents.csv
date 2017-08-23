@@ -1,92 +1,92 @@
-;;name;PD;description;target;requirements;requirementTarget;requirementRule;mod
-;;Afortunado;8;Con 1 nivel repite 1 tirada cada 4 horas de partida. Con 2 niveles la repite cada 2 horas de partida;;;;;
-;;Ambidiestro;9;Hace que desaparezcan los negativos por llevar un arma en cada mano;;Entrenado en armas cuerpo a cuerpo o distancia;armas a cuerpo a cuerpoORarmas a distancia;TRAINNING;
-;;Artista Marcial;8;Permite realizar las Maniobras Proyectar, Usar la Fuerza de Otro, Bloqueo y Golpe en el Aire. Además las maniobras Agarrón, Asfixiar, Desarmar, Escapar y Presa cuestan 1 AC menos;;Tener la Habilidad Pelea a +3 o más.;pelea;MORE_THAN_3;
-;;Atractivo;6;+1 a las tiradas de las Habilidades Persuadir y Engañar por nivel con personas que se puedan sentir atraídas, hasta un máximo de 2 niveles.;persuadirANDengañar;Entrenado en Persuadir y Engañar. ;persuadir;TRAINNING;
-;;Caes como un Gato;4;Por cada nivel de Agilidad por encima de +2 (inclusive) sustrae 5 metros a la caída para calcular el daño;;Tener la Habilidad Agilidad a +3 o más.;agilidad;MORE_THAN_3;
-;;Carismático;7;+1 a las tiradas de las Habilidades Liderazgo y Persuadir por nivel cuando el carisma puede tener efecto, hasta un máximo de 3 niveles;;Entrenado en Liderazgo y Persuadir. ;persuadirANDliderazgo;TRAINNING;
-;;Científico Nato;8;Todas las habilidades de Ciencia se consideran a 0 cuando se realicen tiradas, y se consideran Entrenadas a tal efecto;;;;;
-;;Comerciante;5;+1 a las tiradas de la Habilidad Persuadir cuando negocie, compre, venda, regatee…;;Tener la Habilidad Persuadir a +3 o más;persuadir;MORE_THAN_3;
-;;Concentrado;6;Gana un +1 a cualquier tarea prolongada, pero no se percata de las cosas a su alrededor, por lo que mientras desarrolla la tarea tiene un -2 a las tiradas de Atención;;;;;
-;;Conductor Alta Velocidad;4;+1 a las tiradas de la Habilidad Conducir Vehículo (Ruedas) por nivel cuando conduzca coches de carreras o participe en persecuciones, hasta un máximo de 3 niveles;;Entrenado en Conducir Vehículo (Ruedas). ;conducir vehículo (ruedas);TRAINNING;
-;;Conductor Militar;5;+1 a las tiradas de las Habilidades Conducir Vehículo (Ligero) y Conducir Vehículo (Pesado) por nivel cuando se conduzca en combate, hasta un máximo de 2 niveles;;Entrenado en Conducir Vehículo (Ligero) y Conducir Vehículo (Pesado). ;conducir vehículo (ligero)ANDconducir vehiculo (pesado);TRAINNING;
-;;Contactos;5;Contactos proporciona la posibilidad de pedirle 2 veces por partida a un contacto (o a 2 contactos distintos) que le consiga información o que le haga un favor (mientras no sea peligroso) al personaje;;;;;
-;;Curación Rápida;8;El personaje realiza las tiradas de Curación Natural en la mitad de tiempo.;;Tener la Habilidad Vigor a +3 o más.;vigor;MORE_THAN_3;
-;;Desenvainado Rápido;3;Permite desenvainar espadas por 1 AC;;Tener Armas Cuerpo a Cuerpo o Armas a 1 Mano a 3+ o más;armas a cuerpo a cuerpoORarmas a 1 mano;MORE_THAN_3;
-;;Detective Privado;5;+1 a las tiradas de la Habilidad Atención cuando investigue algo que tenga que ver con una “investigación activa”. Se puede adquirir 3 veces, añadiendo una “investigación activa” cada vez;;Tener la Habilidad Atención a +3 o más;;;
-;;Doctorado en Antropología;4;+1 a las tiradas de la Habilidad Antropología en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Antropología) a +3 o más;atención;MORE_THAN_3;
-;;Doctorado en Arte;4;+1 a las tiradas de la Habilidad Conocimiento (Arte) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Arte) a +3 o más;conocimiento (arte);MORE_THAN_3;
-;;Doctorado en Biología;4;+1 a las tiradas de la Habilidad Ciencia (Biología) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Biología) a +3 o más;ciencia (biología);MORE_THAN_3;
-;;Doctorado en Física;4;+1 a las tiradas de la Habilidad Ciencia (Física) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Física) a +3 o más;ciencia (física);MORE_THAN_3;
-;;Doctorado en Forense;4;+1 a las tiradas de la Habilidad Ciencia (Forense) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Forense) a +3 o más;ciencia (forense);MORE_THAN_3;
-;;Doctorado en Genética;4;+1 a las tiradas de la Habilidad Ciencia (Genética) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Genética) a +3 o más;ciencia (genética);MORE_THAN_3;
-;;"Doctorado en 
+name;PD;description;target;requirements;requirementTarget;requirementRule;mod
+Afortunado;8;Con 1 nivel repite 1 tirada cada 4 horas de partida. Con 2 niveles la repite cada 2 horas de partida;;;;;
+Ambidiestro;9;Hace que desaparezcan los negativos por llevar un arma en cada mano;;Entrenado en armas cuerpo a cuerpo o distancia;armas a cuerpo a cuerpoORarmas a distancia;TRAINNING;
+Artista Marcial;8;Permite realizar las Maniobras Proyectar, Usar la Fuerza de Otro, Bloqueo y Golpe en el Aire. Además las maniobras Agarrón, Asfixiar, Desarmar, Escapar y Presa cuestan 1 AC menos;;Tener la Habilidad Pelea a +3 o más.;pelea;MORE_THAN_3;
+Atractivo;6;+1 a las tiradas de las Habilidades Persuadir y Engañar por nivel con personas que se puedan sentir atraídas, hasta un máximo de 2 niveles.;persuadirANDengañar;Entrenado en Persuadir y Engañar. ;persuadir;TRAINNING;
+Caes como un Gato;4;Por cada nivel de Agilidad por encima de +2 (inclusive) sustrae 5 metros a la caída para calcular el daño;;Tener la Habilidad Agilidad a +3 o más.;agilidad;MORE_THAN_3;
+Carismático;7;+1 a las tiradas de las Habilidades Liderazgo y Persuadir por nivel cuando el carisma puede tener efecto, hasta un máximo de 3 niveles;;Entrenado en Liderazgo y Persuadir. ;persuadirANDliderazgo;TRAINNING;
+Científico Nato;8;Todas las habilidades de Ciencia se consideran a 0 cuando se realicen tiradas, y se consideran Entrenadas a tal efecto;;;;;
+Comerciante;5;+1 a las tiradas de la Habilidad Persuadir cuando negocie, compre, venda, regatee…;;Tener la Habilidad Persuadir a +3 o más;persuadir;MORE_THAN_3;
+Concentrado;6;Gana un +1 a cualquier tarea prolongada, pero no se percata de las cosas a su alrededor, por lo que mientras desarrolla la tarea tiene un -2 a las tiradas de Atención;;;;;
+Conductor Alta Velocidad;4;+1 a las tiradas de la Habilidad Conducir Vehículo (Ruedas) por nivel cuando conduzca coches de carreras o participe en persecuciones, hasta un máximo de 3 niveles;;Entrenado en Conducir Vehículo (Ruedas). ;conducir vehículo (ruedas);TRAINNING;
+Conductor Militar;5;+1 a las tiradas de las Habilidades Conducir Vehículo (Ligero) y Conducir Vehículo (Pesado) por nivel cuando se conduzca en combate, hasta un máximo de 2 niveles;;Entrenado en Conducir Vehículo (Ligero) y Conducir Vehículo (Pesado). ;conducir vehículo (ligero)ANDconducir vehiculo (pesado);TRAINNING;
+Contactos;5;Contactos proporciona la posibilidad de pedirle 2 veces por partida a un contacto (o a 2 contactos distintos) que le consiga información o que le haga un favor (mientras no sea peligroso) al personaje;;;;;
+Curación Rápida;8;El personaje realiza las tiradas de Curación Natural en la mitad de tiempo.;;Tener la Habilidad Vigor a +3 o más.;vigor;MORE_THAN_3;
+Desenvainado Rápido;3;Permite desenvainar espadas por 1 AC;;Tener Armas Cuerpo a Cuerpo o Armas a 1 Mano a 3+ o más;armas a cuerpo a cuerpoORarmas a 1 mano;MORE_THAN_3;
+Detective Privado;5;+1 a las tiradas de la Habilidad Atención cuando investigue algo que tenga que ver con una “investigación activa”. Se puede adquirir 3 veces, añadiendo una “investigación activa” cada vez;;Tener la Habilidad Atención a +3 o más;;;
+Doctorado en Antropología;4;+1 a las tiradas de la Habilidad Antropología en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Antropología) a +3 o más;atención;MORE_THAN_3;
+Doctorado en Arte;4;+1 a las tiradas de la Habilidad Conocimiento (Arte) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Arte) a +3 o más;conocimiento (arte);MORE_THAN_3;
+Doctorado en Biología;4;+1 a las tiradas de la Habilidad Ciencia (Biología) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Biología) a +3 o más;ciencia (biología);MORE_THAN_3;
+Doctorado en Física;4;+1 a las tiradas de la Habilidad Ciencia (Física) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Física) a +3 o más;ciencia (física);MORE_THAN_3;
+Doctorado en Forense;4;+1 a las tiradas de la Habilidad Ciencia (Forense) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Forense) a +3 o más;ciencia (forense);MORE_THAN_3;
+Doctorado en Genética;4;+1 a las tiradas de la Habilidad Ciencia (Genética) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Genética) a +3 o más;ciencia (genética);MORE_THAN_3;
+"Doctorado en 
 Geografía";4;+1 a las tiradas de la Habilidad Conocimiento (Geografía) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Geografía) a +3 o más;conocimiento (geografía);MORE_THAN_3;
-;;Doctorado en Geología;4;+1 a las tiradas de la Habilidad Ciencia (Geología) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Geología) a +3 o más;ciencia (geología);MORE_THAN_3;
-;;Doctorado en Historia;4;+1 a las tiradas de la Habilidad Historia en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Historia) a +3 o más;conocimiento (historia);MORE_THAN_3;
-;;"Doctorado en 
+Doctorado en Geología;4;+1 a las tiradas de la Habilidad Ciencia (Geología) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Geología) a +3 o más;ciencia (geología);MORE_THAN_3;
+Doctorado en Historia;4;+1 a las tiradas de la Habilidad Historia en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Historia) a +3 o más;conocimiento (historia);MORE_THAN_3;
+"Doctorado en 
 Informática";4;+1 a las tiradas de la Habilidad Ciencia (Informática) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Informática) a +3 o más;ciencia (informática);MORE_THAN_3;
-;;"Doctorado en 
+"Doctorado en 
 Ingeniería";4;+1 a las tiradas de la Habilidad Ciencia (Ingeniería) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Ingeniería) a +3 o más;ciencia (ingeniería);MORE_THAN_3;
-;;Doctorado en Leyes;4;+1 a las tiradas de la Habilidad Conocimiento (Leyes) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Leyes) a +3 o más;conocimiento (leyes);MORE_THAN_3;
-;;"Doctorado en 
+Doctorado en Leyes;4;+1 a las tiradas de la Habilidad Conocimiento (Leyes) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Leyes) a +3 o más;conocimiento (leyes);MORE_THAN_3;
+"Doctorado en 
 Lingüística";4;+1 a las tiradas de la Habilidad Conocimiento (Lingüística) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Lingüística) a +3 o más;conocimiento (lingüística);MORE_THAN_3;
-;;"Doctorado en 
+"Doctorado en 
 Matemáticas";4;+1 a las tiradas de la Habilidad Ciencia (Matemáticas) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Matemáticas) a +3 o más;ciencia (matemáticas);MORE_THAN_3;
-;;"Doctorado en 
+"Doctorado en 
 Medicina";4;+1 a las tiradas de la Habilidad Ciencia (Medicina) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Medicina) a +3 o más;ciencia (medicina);MORE_THAN_3;
-;;"Doctorado en 
+"Doctorado en 
 Psicología";4;+1 a las tiradas de la Habilidad Conocimiento (Psicología) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Psicología) a +3 o más;conocimiento (psicología);MORE_THAN_3;
-;;Doctorado en Química;4;+1 a las tiradas de la Habilidad Ciencia (Química) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Química) a +3 o más;ciencia (química);MORE_THAN_3;
-;;Doctorado en Robótica;4;+1 a las tiradas de la Habilidad Ciencia (Robótica) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Robótica) a +3 o más;ciencia (robótica);MORE_THAN_3;
-;;"Doctorado en 
+Doctorado en Química;4;+1 a las tiradas de la Habilidad Ciencia (Química) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Química) a +3 o más;ciencia (química);MORE_THAN_3;
+Doctorado en Robótica;4;+1 a las tiradas de la Habilidad Ciencia (Robótica) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Robótica) a +3 o más;ciencia (robótica);MORE_THAN_3;
+"Doctorado en 
 Sociología";4;+1 a las tiradas de la Habilidad Conocimiento (Sociología) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Conocimiento (Sociología) a +3 o más;conocimiento (sociología);MORE_THAN_3;
-;;"Doctorado en 
+"Doctorado en 
 Xenología";4;+1 a las tiradas de la Habilidad Ciencia (Xenología) en el campo especializado, pudiendo especializarse en tres campos distintos;;Tener la Habilidad Ciencia (Xenología) a +3 o más;ciencia (xenología);MORE_THAN_3;
-;;Enamorado de Otra Era;7;Escoge una época o cultura con un NT inferior. No tiene negativos usando objetos de esa cultura y época;;;;MORE_THAN_3;
-;;Entrenado en Otra Gravedad;7;Escoge una Gravedad. Ignoras los negativos a Agilidad de dicha Gravedad;;;;;
-;;Equilibrio Perfecto;4;No necesita hacer tiradas de Agilidad para mantener el equilibrio siempre que la dificultad sea 13 o inferior;;Tener la Habilidad Agilidad a +3 o más.;agilidad;MORE_THAN_3;
-;;Escala (Positiva);7;Cada +1 de Escala proporciona +1 a Daño cuerpo a cuerpo  y +1 a Resistencia al Daño, pero el nivel de dificultad para impactarle (ya sea cuerpo a cuerpo o a distancia) se reduce en uno por cada 2 niveles de Escala;;;;;
-;;Esquiva Intuitiva;6;El personaje puede esquivar aunque no le queden AC, pero usando las AC del turno siguiente;;Entrenado en Esquivar;esquivar;TRAINNING;
-;;Estratega;4;+1 a todas las Tiradas de la Habilidad Liderazgo que se hagan para administrar y manejar una nación, poblado e incluso unidad militar, siempre que no se trate de un uso de Liderazgo en combate;;Tener la Habilidad Liderazgo a +3 o más;liderazgo;MORE_THAN_3;
-;;Favores debidos;7;Al adquirir este Talento se obtienen 10 favores para “gastar” a lo largo de las partidas. Los favores pueden permitir acceso a lugares o información a los que de otra forma no se tendría acceso. Incluso pueden hacer que la persona que devuelve el favor se arriesgue por el personaje;;;;;
-;;Furtivo;6;+1 a las tiradas de la Habilidad Sigilo por nivel cuando se intente esconder, hasta un máximo de 3 niveles;;Entrenado en Sigilo. ;sigilo;TRAINNING;
-;;Gun Fu;6;Permite desenvainar pistolas por 1 AC y recargarlas por 2 AC;;Tener la Habilidad Armas Cortas o Armas de Pólvora a 3+ o más;armas cortasORarmas de pólvora;MORE_THAN_3;
-;;Gun Kata;8;Permite usar Pistolas o Rifles costando 1 AC menos cada ataque, y da acceso a algunas Maniobras especiales;;Tener la Habilidad Armas Cortas, Armas de Pólvora o Armas Largas a 3+ o más;armas cortasORarmas de pólvoraORarmas largas;MORE_THAN_3;
-;;Hacker;4;+1 a las tiradas de la Habilidad Computadora por nivel cuando intente romper sistemas de seguridad informáticos, hasta un máximo de 3 niveles;;"Entrenado en 
+Enamorado de Otra Era;7;Escoge una época o cultura con un NT inferior. No tiene negativos usando objetos de esa cultura y época;;;;MORE_THAN_3;
+Entrenado en Otra Gravedad;7;Escoge una Gravedad. Ignoras los negativos a Agilidad de dicha Gravedad;;;;;
+Equilibrio Perfecto;4;No necesita hacer tiradas de Agilidad para mantener el equilibrio siempre que la dificultad sea 13 o inferior;;Tener la Habilidad Agilidad a +3 o más.;agilidad;MORE_THAN_3;
+Escala (Positiva);7;Cada +1 de Escala proporciona +1 a Daño cuerpo a cuerpo  y +1 a Resistencia al Daño, pero el nivel de dificultad para impactarle (ya sea cuerpo a cuerpo o a distancia) se reduce en uno por cada 2 niveles de Escala;;;;;
+Esquiva Intuitiva;6;El personaje puede esquivar aunque no le queden AC, pero usando las AC del turno siguiente;;Entrenado en Esquivar;esquivar;TRAINNING;
+Estratega;4;+1 a todas las Tiradas de la Habilidad Liderazgo que se hagan para administrar y manejar una nación, poblado e incluso unidad militar, siempre que no se trate de un uso de Liderazgo en combate;;Tener la Habilidad Liderazgo a +3 o más;liderazgo;MORE_THAN_3;
+Favores debidos;7;Al adquirir este Talento se obtienen 10 favores para “gastar” a lo largo de las partidas. Los favores pueden permitir acceso a lugares o información a los que de otra forma no se tendría acceso. Incluso pueden hacer que la persona que devuelve el favor se arriesgue por el personaje;;;;;
+Furtivo;6;+1 a las tiradas de la Habilidad Sigilo por nivel cuando se intente esconder, hasta un máximo de 3 niveles;;Entrenado en Sigilo. ;sigilo;TRAINNING;
+Gun Fu;6;Permite desenvainar pistolas por 1 AC y recargarlas por 2 AC;;Tener la Habilidad Armas Cortas o Armas de Pólvora a 3+ o más;armas cortasORarmas de pólvora;MORE_THAN_3;
+Gun Kata;8;Permite usar Pistolas o Rifles costando 1 AC menos cada ataque, y da acceso a algunas Maniobras especiales;;Tener la Habilidad Armas Cortas, Armas de Pólvora o Armas Largas a 3+ o más;armas cortasORarmas de pólvoraORarmas largas;MORE_THAN_3;
+Hacker;4;+1 a las tiradas de la Habilidad Computadora por nivel cuando intente romper sistemas de seguridad informáticos, hasta un máximo de 3 niveles;;"Entrenado en 
 Computadora. ";computadora;TRAINNING;
-;;Infatigable;9;El primer nivel permite ignorar los negativos por estar Aturdido. El segundo nivel permite ignorar los negativos por estar Gravemente Aturdido;;;;;
-;;Investigador;5;+1 a la Habilidad Atención (para búsquedas en bibliotecas y búsquedas físicas) y  Computadora (para búsquedas informáticas) cuando busque e investigue información relacionada con una Habilidad de Ciencia (Especialidad) o Conocimiento (Especialidad) que se tenga Entrenada;;Entrenado en una Habilidad de Ciencia o Conocimiento, además de Atención. Computadora es requisito si NT 6+;atención;CUSTOM;
-;;Maestría en Arma y Escudo;6;Cuando lleve Arma y Escudo no tiene el -1 para atacar con el Arma.;;Entrenado en habilidad de combate cuerpo a cuerpo;combate cuerpo a cuerpo;TRAINNING;
-;;Maestro de              Esgrima;8;Permite usar Armas a 1 Mano o Armas Cuerpo a Cuerpo costando 1 AC menos cada ataque, y da acceso a algunas Maniobras especiales;;Tener Habilidad Armas a 1 Mano o Armas Cuerpo a Cuerpo a 3+ o más;armas a 1 mano o armas cuerpo a cuerpo;MORE_THAN_3;
-;;Maestro del Saber;8;Todas las habilidades de Conocimientos se consideran a 0 cuando se realicen tiradas, y se consideran Entrenadas a tal efecto;;;;;
-;;Manitas;6;+1 a las tiradas de las Habilidades Electrónica y Mecánica por nivel cuando se utilicen para Reparar, hasta un máximo de 3 niveles;;"Entrenado en 
+Infatigable;9;El primer nivel permite ignorar los negativos por estar Aturdido. El segundo nivel permite ignorar los negativos por estar Gravemente Aturdido;;;;;
+Investigador;5;+1 a la Habilidad Atención (para búsquedas en bibliotecas y búsquedas físicas) y  Computadora (para búsquedas informáticas) cuando busque e investigue información relacionada con una Habilidad de Ciencia (Especialidad) o Conocimiento (Especialidad) que se tenga Entrenada;;Entrenado en una Habilidad de Ciencia o Conocimiento, además de Atención. Computadora es requisito si NT 6+;atenciónANDcomputadora;KNOWLEDGE_COMPUTER;
+Maestría en Arma y Escudo;6;Cuando lleve Arma y Escudo no tiene el -1 para atacar con el Arma.;;Entrenado en habilidad de combate cuerpo a cuerpo;combate cuerpo a cuerpo;TRAINNING;
+Maestro de              Esgrima;8;Permite usar Armas a 1 Mano o Armas Cuerpo a Cuerpo costando 1 AC menos cada ataque, y da acceso a algunas Maniobras especiales;;Tener Habilidad Armas a 1 Mano o Armas Cuerpo a Cuerpo a 3+ o más;armas a 1 mano o armas cuerpo a cuerpo;MORE_THAN_3;
+Maestro del Saber;8;Todas las habilidades de Conocimientos se consideran a 0 cuando se realicen tiradas, y se consideran Entrenadas a tal efecto;;;;;
+Manitas;6;+1 a las tiradas de las Habilidades Electrónica y Mecánica por nivel cuando se utilicen para Reparar, hasta un máximo de 3 niveles;;"Entrenado en 
 Electrónica y Mecánica. ";electrónicaANDmecánica;TRAINNING;
-;;Memoria Eidética;6;El personaje tiene una memoria perfecta. Recuerda todo lo que vea y lea durante la partida. Nunca olvida una cara, un nombre, cómo llegar a un sitio, etc.;;;;;
-;;Nativo de NT superior;9;El personaje proviene de una época o cultura con un NT superior. No tiene negativos usando objetos de esa cultura y época.;;;;;
-;;NT elevado;3;El personaje está entrenado en el uso de una Habilidad con un NT superior al de su propia sociedad o cultura.;;;;;
-;;Orientación;4;+1 por nivel (hasta un máximo de 3) a cualquier tirada de Navegación que haga para saber dónde se encuentra, aunque no tenga referencias claras;;"Entrenado en 
+Memoria Eidética;6;El personaje tiene una memoria perfecta. Recuerda todo lo que vea y lea durante la partida. Nunca olvida una cara, un nombre, cómo llegar a un sitio, etc.;;;;;
+Nativo de NT superior;9;El personaje proviene de una época o cultura con un NT superior. No tiene negativos usando objetos de esa cultura y época.;;;;;
+NT elevado;3;El personaje está entrenado en el uso de una Habilidad con un NT superior al de su propia sociedad o cultura.;;;;;
+Orientación;4;+1 por nivel (hasta un máximo de 3) a cualquier tirada de Navegación que haga para saber dónde se encuentra, aunque no tenga referencias claras;;"Entrenado en 
 Navegación. ";navegación;TRAINNING;
-;;Piloto de Combate;5;+1 a las tiradas de las Habilidades Pilotar (Aeronaves) y Pilotar (Astronaves) por nivel cuando se pilote en combate, hasta un máximo de 2 niveles;;Entrenado en Pilotar (Aeronaves) y Pilotar (Astronaves). ;pilotar (aeronaves)ANDpilotar (astronaves);TRAINNING;
-;;Piloto de Pruebas;4;+1 a tiradas de Habilidad Pilotar (Aeronaves) por nivel pilotando aviones experimentales o supersónicos, hasta un máximo de 3 niveles;;Entrenado en Pilotar (Aeronaves). ;pilotar (aeronaves);TRAINNING;
-;;Psicoanalista;6;+1 a cualquier tirada de Conocimiento (Psicología) que haga para hacer perder a otras personas Puntos de Estrés o Locura;;Tener la Habilidad Conocimiento (Psicología) a +3 o más y estar Entrenado en Averiguar Intenciones y Persuadir;conocimiento (psicología)ANDaveriguar intenciones;MORE_THAN_3;
-;;Puntería Zen;4;El personaje puede moverse en el mismo turno en el que apunta, siempre que tenga AC disponibles;;Entrenado en Habilidad de ataque a distancia;;TRAINNING;
-;;Puños/Pies  de Acero;7;+1 Daño por nivel con puñetazos o patadas, hasta un máximo de 3 niveles en cada uno;;Entrenado en Pelea. ;pelea;TRAINNING;
-;;Rango;Variable;Cada nivel es un rango superior en una organización militar, para-militar o policial;;Según Rango;;;
-;;Rapidez;9;+3 AC por nivel, hasta un máximo de 2 niveles;;Entrenado en Agilidad y Atención. ;agilidadANDatención;TRAINNING;
-;;Reflejos Rápidos;7;+1 INI por nivel, hasta un máximo de 3 niveles;;Entrenado en Agilidad y Atención. ;agilidadANDatención;TRAINNING;
-;;Resistencia al Daño;7;+1 Resistencia al Daño (RD) por nivel, hasta un máximo de 3 niveles;;Entrenado en Vigor. ;vigor;TRAINNING;
-;;Rico y Poderoso;10;El personaje tiene más dinero inicial, y una vez por partida puede pedirle un favor (caro o difícil, pero nunca peligroso o inviable políticamente) a uno de sus amigos en las altas esferas;;;;;
-;;Seductor;5;+1 a las tiradas de la Habilidad Persuadir cuando se intente seducir si el objetivo de la seducción se siente atraído por las personas del sexo del personaje Seductor;;Entrenado en Persuadir;persuadir;TRAINNING;
-;;Sentidos Agudos;5;Escoge un sentido. Por cada nivel se obtiene un +1 a las tiradas de Atención en las que ese sentido afecte. Se puede adquirir para varios sentidos, pudiendo adquirir 2 niveles para cada sentido;;Entrenado en Atención. ;atención;TRAINNING;
-;;Sentir el Peligro;4;Cuando el personaje con este Talento esté bajo un peligro inminente el DJ hará una tirada de Atención por ese personaje, y con un resultado 13 o más le avisará;;;;;
-;;Sigiloso;6;+1 a las tiradas de la Habilidad Sigilo por nivel cuando se intente mover en silencio, hasta un máximo de 3 niveles;;Entrenado en Sigilo. ;sigilo;TRAINNING;
-;;Sin Miedo;5;+2 a las Tiradas de Estrés y Locura;;Entrenado en Voluntad;voluntad;TRAINNING;
-;;Superviviente (Entorno);4;Escoge un Entorno. +1 a las tiradas de Supervivencia realizadas en ese entorno;;Tener la Habilidad Supervivencia a +3 o más.;supervivencia;MORE_THAN_3;
-;;Táctico;4;+1 a todas las Tiradas de Liderazgo que haga cuando se encuentre en combate liderando sus tropas;;Entrenado en Liderazgo;liderazgo;TRAINNING;
-;;Teólogo;4;+1 a las tiradas de la Habilidad Teología en la religión escogida, pudiendo especializarse en tres religiones distintas;;Tener la Habilidad Conocimiento (Teología) a +3 o más;conocimiento (teología);MORE_THAN_3;
-;;Tolerancia al Dolor;9;El primer nivel permite ignorar los negativos por estar Herido. El segundo nivel permite ignorar los negativos por estar Gravemente Herido;;;;;
-;;Torturador;5;+1 a las tiradas de las Habilidades Intimidar cuando se use la violencia para extraer información;;Entrenado en Intimidar ;intimidar;TRAINNING;
-;;Veloz;7;+1 MOV por nivel, hasta un máximo de 2 niveles;;Entrenado en Agilidad y Atención.;agilidadANDatención;TRAINNING;
-;;Veterano;13;Todas las habilidades que se tengan a No entrenado se consideran a 0 cuando se realicen tiradas, y se consideran Entrenadas a tal efecto;;;;;
-;;Voluntad de Hierro;5;+1 a las Tiradas de Voluntad (que no sean Tiradas de Estrés, Locura o Corrupción) por nivel, hasta un máximo de 3 niveles;;Entrenado en Voluntad. ;voluntad;TRAINNING;
+Piloto de Combate;5;+1 a las tiradas de las Habilidades Pilotar (Aeronaves) y Pilotar (Astronaves) por nivel cuando se pilote en combate, hasta un máximo de 2 niveles;;Entrenado en Pilotar (Aeronaves) y Pilotar (Astronaves). ;pilotar (aeronaves)ANDpilotar (astronaves);TRAINNING;
+Piloto de Pruebas;4;+1 a tiradas de Habilidad Pilotar (Aeronaves) por nivel pilotando aviones experimentales o supersónicos, hasta un máximo de 3 niveles;;Entrenado en Pilotar (Aeronaves). ;pilotar (aeronaves);TRAINNING;
+Psicoanalista;6;+1 a cualquier tirada de Conocimiento (Psicología) que haga para hacer perder a otras personas Puntos de Estrés o Locura;;Tener la Habilidad Conocimiento (Psicología) a +3 o más y estar Entrenado en Averiguar Intenciones y Persuadir;conocimiento (psicología)ANDaveriguar intenciones;MORE_THAN_3_TRAINNING;
+Puntería Zen;4;El personaje puede moverse en el mismo turno en el que apunta, siempre que tenga AC disponibles;;Entrenado en Habilidad de ataque a distancia;;TRAINNING;
+Puños/Pies  de Acero;7;+1 Daño por nivel con puñetazos o patadas, hasta un máximo de 3 niveles en cada uno;;Entrenado en Pelea. ;pelea;TRAINNING;
+Rango;Variable;Cada nivel es un rango superior en una organización militar, para-militar o policial;;Según Rango;;;
+Rapidez;9;+3 AC por nivel, hasta un máximo de 2 niveles;;Entrenado en Agilidad y Atención. ;agilidadANDatención;TRAINNING;
+Reflejos Rápidos;7;+1 INI por nivel, hasta un máximo de 3 niveles;;Entrenado en Agilidad y Atención. ;agilidadANDatención;TRAINNING;
+Resistencia al Daño;7;+1 Resistencia al Daño (RD) por nivel, hasta un máximo de 3 niveles;;Entrenado en Vigor. ;vigor;TRAINNING;
+Rico y Poderoso;10;El personaje tiene más dinero inicial, y una vez por partida puede pedirle un favor (caro o difícil, pero nunca peligroso o inviable políticamente) a uno de sus amigos en las altas esferas;;;;;
+Seductor;5;+1 a las tiradas de la Habilidad Persuadir cuando se intente seducir si el objetivo de la seducción se siente atraído por las personas del sexo del personaje Seductor;;Entrenado en Persuadir;persuadir;TRAINNING;
+Sentidos Agudos;5;Escoge un sentido. Por cada nivel se obtiene un +1 a las tiradas de Atención en las que ese sentido afecte. Se puede adquirir para varios sentidos, pudiendo adquirir 2 niveles para cada sentido;;Entrenado en Atención. ;atención;TRAINNING;
+Sentir el Peligro;4;Cuando el personaje con este Talento esté bajo un peligro inminente el DJ hará una tirada de Atención por ese personaje, y con un resultado 13 o más le avisará;;;;;
+Sigiloso;6;+1 a las tiradas de la Habilidad Sigilo por nivel cuando se intente mover en silencio, hasta un máximo de 3 niveles;;Entrenado en Sigilo. ;sigilo;TRAINNING;
+Sin Miedo;5;+2 a las Tiradas de Estrés y Locura;;Entrenado en Voluntad;voluntad;TRAINNING;
+Superviviente (Entorno);4;Escoge un Entorno. +1 a las tiradas de Supervivencia realizadas en ese entorno;;Tener la Habilidad Supervivencia a +3 o más.;supervivencia;MORE_THAN_3;
+Táctico;4;+1 a todas las Tiradas de Liderazgo que haga cuando se encuentre en combate liderando sus tropas;;Entrenado en Liderazgo;liderazgo;TRAINNING;
+Teólogo;4;+1 a las tiradas de la Habilidad Teología en la religión escogida, pudiendo especializarse en tres religiones distintas;;Tener la Habilidad Conocimiento (Teología) a +3 o más;conocimiento (teología);MORE_THAN_3;
+Tolerancia al Dolor;9;El primer nivel permite ignorar los negativos por estar Herido. El segundo nivel permite ignorar los negativos por estar Gravemente Herido;;;;;
+Torturador;5;+1 a las tiradas de las Habilidades Intimidar cuando se use la violencia para extraer información;;Entrenado en Intimidar ;intimidar;TRAINNING;
+Veloz;7;+1 MOV por nivel, hasta un máximo de 2 niveles;;Entrenado en Agilidad y Atención.;agilidadANDatención;TRAINNING;
+Veterano;13;Todas las habilidades que se tengan a No entrenado se consideran a 0 cuando se realicen tiradas, y se consideran Entrenadas a tal efecto;;;;;
+Voluntad de Hierro;5;+1 a las Tiradas de Voluntad (que no sean Tiradas de Estrés, Locura o Corrupción) por nivel, hasta un máximo de 3 niveles;;Entrenado en Voluntad. ;voluntad;TRAINNING;
