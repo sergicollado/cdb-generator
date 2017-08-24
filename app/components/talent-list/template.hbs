@@ -37,14 +37,15 @@
       {{#each dataTalents as |talent|}}
       <tr class="" {{action "setTalent" talent}}>
         <td>
-          <div class="ui ribbon label">{{talent.name}}</div>
-          {{#if talent.isSelected }}
-            <i class="checkmark box icon"></i>
-          {{/if}}
+        <div class="ui ribbon label">{{talent.name}}</div>
+        {{#if talent.isSelected }}
+          <i class="checkmark box icon"></i>
+        {{/if}}
         </td>
         <td>{{talent.description}}</td>
         <td>{{talent.requirements}}</td>
         <td>{{talent.PD}}</td>
+
       </tr>
       {{/each}}
     </tbody>

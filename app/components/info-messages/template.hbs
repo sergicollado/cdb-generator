@@ -1,0 +1,21 @@
+<div>
+  {{#if showRequeriments}}
+    <div class="ui info message">
+      <i class="close icon"></i>
+      <div class="header">
+        Has superado las siguientes restricciones:
+      </div>
+      <ul class="list">
+        {{#if skillsLimitations}}
+        <li>Has superado los límites en el nível de atributos del personaje</li>
+        {{/if}}
+        {{#if talentsMaxPDLimitations}}
+          <li>Has superado los límites en talentos</li>
+        {{/if}}
+        {{#if talentsMaxPDLimitations}}
+          <li>No cumples con algún requerimiento en algún talento</li>
+        {{/if}}
+      </ul>
+    </div>
+  {{/if}}
+</div>

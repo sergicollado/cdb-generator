@@ -21,11 +21,13 @@ export default Ember.Component.extend({
     removeTalent(talent){
       this.get('character.talents').removeObject(talent);
       this.get('dataTalents').findBy('name',talent.get('name')).set('isSelected',false);
+      this.decrementProperty('character.talentsPD',talent.get('PD'));
     },
     setTalent(talent){
       if(talent.get('isSelected')){
         return;
       }
+
       talent.set('isSelected',true);
       let store = this.get('store');
       this.get('character.talents').addObject(store.createRecord('talent',{
@@ -36,6 +38,7 @@ export default Ember.Component.extend({
           PD: talent.PD
         })
       );
+      this.incrementProperty('character.talentsPD',talent.PD);
     }
   }
 });
