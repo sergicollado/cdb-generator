@@ -19,7 +19,7 @@ export default Ember.Service.extend({
     },{
         name: 'normal',
         points: 100,
-        skillLimits: [{count: 3, max:4}, {count:1, max:4}],
+        skillLimits: [{count: 4, max:3}, {count:1, max:4}],
         talents: { PDmax: 25},
         artificialGifts : {PDmax: 20},
         limitations :{ max: 2},
@@ -47,5 +47,30 @@ export default Ember.Service.extend({
          Gastar hasta 25 PD en Dones.
          Adquirir un máximo de 1 Limitación.
 `
-    }]
+    }],
+    checkPointsLimits(character){
+      return character.get('totalPD') <= character.get('powerLevel').points;
+    },
+    checkSkillsLimits(character){
+      let skillLimitsList = character.get('powerLevel').skillLimits;
+      return !skillLimitsList.some(function(skillLimit){
+          let maxCount = character.skills.reduce(function(previousValue, skill, index, enumerable){
+            if( skill.get('level') >= skillLimit.max){
+              return previousValue+1;
+            }
+            return previousValue;
+          },0);
+          return maxCount > skillLimit.count;
+      });
+    },
+    checkTalentsPDLimits(character){
+      return character.get('talentsPD') <= character.get('powerLevel').talents.PDmax;
+
+    },
+    // checkGifts(character){
+    //   return true;
+    // },
+    // LimitationsLimits(character){
+    //   return true;
+    // }
 });
