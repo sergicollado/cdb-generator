@@ -1,18 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  talentService: Ember.inject.service('talents'),
   init: function(){
     this._super(...arguments);
     let self = this;
-    Ember.$.getJSON("talents.json").then(function(data){
-      let talents = data.map(function(obj){
-        return Ember.Object.create(obj);
-      });
+    this.get('talentService').loadTalents().then(function(talents){
       self.set('dataTalents',talents);
     })
   },
-  store: Ember.inject.service(),
-  talentService: Ember.inject.service('talents'),
+
   isShowingTalentSelector:false,
   actions: {
     toogleDataTalents() {
@@ -29,15 +26,8 @@ export default Ember.Component.extend({
       }
 
       talent.set('isSelected',true);
-      let store = this.get('store');
-      this.get('character.talents').addObject(store.createRecord('talent',{
-          name: talent.name,
-          description: talent.description ,
-          requirements: talent.requirements,
-          requirementRule: talent.requirementRule,
-          PD: talent.PD
-        })
-      );
+      let talentRecord = this.get('talentService').assembleTalent(talent);
+      this.get('character.talents').addObject(talentRecord);
       this.incrementProperty('character.talentsPD',talent.PD);
     }
   }

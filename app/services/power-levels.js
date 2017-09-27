@@ -70,7 +70,7 @@ export default Ember.Service.extend({
     // checkGifts(character){
     //   return true;
     // },
-    // LimitationsLimits(character){
-    //   return true;
-    // }
+    checkLimitationsLimits(character){
+      return character.get('limitations').length <= character.get('powerLevel').limitations.max;
+    }
 });

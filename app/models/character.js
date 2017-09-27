@@ -22,5 +22,6 @@ export default DS.Model.extend({
       let total = this.get('skillsPD')+this.get('talentsPD')+this.get('giftsPD');
       return total;
     }),
-    talents: DS.hasMany('talent')
+    talents: DS.hasMany('talent'),
+    limitations: DS.hasMany('limitation'),
 });

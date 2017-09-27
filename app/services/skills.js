@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-    store: Ember.inject.service(),
     BASE_SKILL: 'BASE_SKILL',
     NT_SKILL: 'NT_SKILL',
     OPTIONAL_SKILLS: 'OPTIONAL_SKILLS',
@@ -23,7 +22,6 @@ export default Ember.Service.extend({
       });
     },
     cleanNTSkills: function(skills){
-      let store = this.get('store');
       let baseType = this.get('BASE_SKILL');
 
       let NTSkills = skills.filter(function(item, index, enumerable){

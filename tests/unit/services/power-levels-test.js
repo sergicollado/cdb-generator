@@ -31,25 +31,6 @@ test('it checks points limits when limit points not get overcome',function(asser
 
   assert.ok(service.get('checkPointsLimits')(character));
 });
-test('it checks talent limits PD when limit get overcome',function(assert){
-  let service = this.subject();
-  let character = Ember.Object.create({
-     powerLevel: service.get('list')[0],
-     talentsPD: 100
-  });
-
-  assert.notOk(service.get('checkTalentsPDLimits')(character));
-});
-
-test('it checks talent limits PD when limit not get overcome',function(assert){
-  let service = this.subject();
-  let character = Ember.Object.create({
-     powerLevel: service.get('list')[0],
-     talentsPD: 20
-  });
-
-  assert.ok(service.get('checkTalentsPDLimits')(character));
-});
 
 test('it checks skillpower-levels-tests limits when limit Max count get overcome',function(assert){
   let service = this.subject();

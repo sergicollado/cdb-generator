@@ -12,33 +12,50 @@ test('it exists', function(assert) {
   assert.ok(service);
 });
 
-
-test('it checks skills limits when limit Max count get overcome',function(assert){
+test('it checks talent limits PD when limit get overcome',function(assert){
   let service = this.subject();
   let character = Ember.Object.create({
-     powerLevel: service.get('list')[1],
-     skills: Ember.A([
-       Ember.Object.create({level:3}),
-       Ember.Object.create({level:3}),
-       Ember.Object.create({level:3}),
-       Ember.Object.create({level:3}),
-       Ember.Object.create({level:3})
-     ])
+     powerLevel: service.get('list')[0],
+     talentsPD: 100
   });
 
-  assert.notOk(service.get('checkSkillsLimits')(character));
+  assert.notOk(service.get('checkTalentsPDLimits')(character));
 });
 
-test('it checks skills limits when limit Max count not get overcome',function(assert){
+test('it checks talent limits PD when limit not get overcome',function(assert){
+  let service = this.subject();
+  let character = Ember.Object.create({
+     powerLevel: service.get('list')[0],
+     talentsPD: 20
+  });
+
+  assert.ok(service.get('checkTalentsPDLimits')(character));
+});
+
+
+test('it checks skills limitations count not get overcome',function(assert){
   let service = this.subject();
   let character = Ember.Object.create({
      powerLevel: service.get('list')[1],
-     skills: Ember.A([
-       Ember.Object.create({level:3}),
-       Ember.Object.create({level:3}),
-       Ember.Object.create({level:4})
-     ])
+     limitations:Ember.A([
+       Ember.Object.create({name:'a limitation'}),
+       Ember.Object.create({name:'another limitation'})
+     ]),
   });
 
-  assert.ok(service.get('checkSkillsLimits')(character));
+  assert.ok(service.get('checkLimitationsLimits')(character));
+});
+
+test('it checks skills limitations count get overcome',function(assert){
+  let service = this.subject();
+  let character = Ember.Object.create({
+     powerLevel: service.get('list')[1],
+     limitations:Ember.A([
+       Ember.Object.create({name:'a limitation'}),
+       Ember.Object.create({name:'another limitation'}),
+       Ember.Object.create({name:'overcome limitation'})
+     ]),
+  });
+
+  assert.notOk(service.get('checkLimitationsLimits')(character));
 });
