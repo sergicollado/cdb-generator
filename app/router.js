@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('home');
   this.route('about');
   this.route('characters');
-  this.route('generation-step1');
+  this.route('generation-step1',{ path: '/' });
   this.route('statistics');
 });
 

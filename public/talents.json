@@ -356,7 +356,7 @@
     "target": "",
     "requirements": "",
     "requirementTarget": "",
-    "requirementRule": "MORE_THAN_3",
+    "requirementRule": "",
     "mod": ""
   },
   {
@@ -495,7 +495,7 @@
     "description": "Permite usar Armas a 1 Mano o Armas Cuerpo a Cuerpo costando 1 AC menos cada ataque, y da acceso a algunas Maniobras especiales",
     "target": "",
     "requirements": "Tener Habilidad Armas a 1 Mano o Armas Cuerpo a Cuerpo a 3+ o más",
-    "requirementTarget": "armas a 1 mano o armas cuerpo a cuerpo",
+    "requirementTarget": "armas a 1 manoORarmas cuerpo a cuerpo",
     "requirementRule": "MORE_THAN_3",
     "mod": ""
   },

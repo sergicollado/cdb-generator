@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
+    store: Ember.inject.service(),
     BASE_SKILL: 'BASE_SKILL',
     NT_SKILL: 'NT_SKILL',
     OPTIONAL_SKILLS: 'OPTIONAL_SKILLS',
