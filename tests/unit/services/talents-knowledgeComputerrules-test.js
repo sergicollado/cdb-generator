@@ -15,7 +15,7 @@ moduleFor('service:talents', 'Unit | Service | talents-knowledgeComputer', {
             "requirementTarget": "atenciónANDcomputadora",
             "requirementRule": "KNOWLEDGE_COMPUTER",
             "mod": ""
-        })
+        });
   }
 });
 
@@ -84,6 +84,44 @@ test('it should return true when KNOWLEDGE_COMPUTER when every requeriment are p
   });
 
   assert.ok(service.checkComputerKnowledge(character, knowledgeComputerTalent));
+});
+
+test('it should return true when KNOWLEDGE_COMPUTER whitout computer skill in low NT',function(assert){
+  let service = this.subject();
+
+  let pl = this.powerLevelsService.list[0];
+  let character = Ember.Object.create({
+     powerLevel: pl,
+     NT: 'NT1To4',
+     skills: Ember.A([
+       Ember.Object.create({name:'atención',level:3}),
+       Ember.Object.create({name:'ciencia (medicina)',level:3})
+     ]),
+     talents: Ember.A([
+       knowledgeComputerTalent
+     ])
+  });
+
+  assert.ok(service.checkComputerKnowledge(character, knowledgeComputerTalent));
+});
+
+test('it should return false when KNOWLEDGE_COMPUTER whitout computer skill in high NT',function(assert){
+  let service = this.subject();
+
+  let pl = this.powerLevelsService.list[0];
+  let character = Ember.Object.create({
+     powerLevel: pl,
+     NT: 'NT6',
+     skills: Ember.A([
+       Ember.Object.create({name:'atención',level:3}),
+       Ember.Object.create({name:'ciencia (medicina)',level:3})
+     ]),
+     talents: Ember.A([
+       knowledgeComputerTalent
+     ])
+  });
+
+  assert.notOk(service.checkComputerKnowledge(character, knowledgeComputerTalent));
 });
 //
 // test('it should return true when TRAINNING talent requirements are accomplished',function(assert){

@@ -127,10 +127,13 @@ export default Ember.Service.extend({
         hasAttention: false
       };
       let skills = character.get('skills');
+      let NT = character.get('NT');
+      let HighNT = (NT === 'NT6' || NT === 'NT7To10');
+
       if(!skills.findBy('name','atención')){
         return false;
       }
-      if(!skills.findBy('name','computadora')){
+      if(!skills.findBy('name','computadora') && HighNT){
         return false;
       }
       return skills.any((skill)=> skill.name.includes('ciencia') || skill.name.includes('conocimiento'))    }
