@@ -96,6 +96,15 @@ export default Ember.Service.extend({
         return skill && skill.get('level')>= 3;
       });
     },
+    _checkMoreThan3TalentOperatorAND(requirementTarget, skills){
+      if(requirementTarget.operator !== this.operators.AND){
+        return true;
+      }
+      return requirementTarget.targets.every(function(target){
+        let skill =  skills.findBy('name',target);
+        return skill && skill.get('level')>= 3;
+      });
+    },
     checkTrainningTalent(character, talent){
       let requirementTarget = this._extractTargets(talent.get('requirementTarget'));
       let skills = character.get('skills');
@@ -108,6 +117,21 @@ export default Ember.Service.extend({
       let skills = character.get('skills');
 
       return this._checkMoreThan3TalentOperatorNEITHER(requirementTarget, skills) &&
-        this._checkMoreThan3TalentOperatorOR(requirementTarget, skills);
-    }
+        this._checkMoreThan3TalentOperatorOR(requirementTarget, skills) &&
+        this._checkMoreThan3TalentOperatorAND(requirementTarget, skills);
+    },
+    checkComputerKnowledge(character, talent){
+      let checks = {
+        hasScienceOrKnoweledge:false,
+        hasComputerSkill:false,
+        hasAttention: false
+      };
+      let skills = character.get('skills');
+      if(!skills.findBy('name','atención')){
+        return false;
+      }
+      if(!skills.findBy('name','computadora')){
+        return false;
+      }
+      return skills.any((skill)=> skill.name.includes('ciencia') || skill.name.includes('conocimiento'))    }
 });

@@ -1,7 +1,8 @@
 import { moduleFor, test } from 'ember-qunit';
 import Ember from 'ember';
 
-let moreThan3RuleTalent, moreThan3RuleTalentORTargets, moreThan3RuleTalentSeveralORTargets;
+let moreThan3RuleTalent, moreThan3RuleTalentORTargets, moreThan3RuleTalentSeveralORTargets,
+  moreThan3RuleTalentANDTargets;
 moduleFor('service:talents', 'Unit | Service | talents | MORE_THAN_3 rule', {
   integration: true,
   beforeEach: function () {
@@ -36,6 +37,16 @@ moduleFor('service:talents', 'Unit | Service | talents | MORE_THAN_3 rule', {
       "requirementRule": "MORE_THAN_3",
       "mod": ""
     });
+    moreThan3RuleTalentANDTargets = Ember.Object.create({
+      "name": "Desenvainado Rápido",
+      "PD": 3,
+      "description": "Permite desenvainar espadas por 1 AC",
+      "target": "",
+      "requirements": "Tener Armas Cuerpo a Cuerpo o Armas a 1 Mano a 3+ o más",
+      "requirementTarget": "armas a cuerpo a cuerpoANDarmas a 1 mano",
+      "requirementRule": "MORE_THAN_3",
+      "mod": ""
+    });
   }
 });
 
@@ -55,7 +66,7 @@ test('it exists', function(assert) {
   // target: talent.target
 });
 
-test('it should return false when MORE_THAN_3 talent requirements are not accomplished',function(assert){
+test('it should return falsliderazgoe when MORE_THAN_3 talent requirements are not accomplished',function(assert){
   let service = this.subject();
 
   let pl = this.powerLevelsService.list[0];
@@ -96,30 +107,30 @@ test('it should return true when MORE_THAN_3 talent when one requirements is acc
   let character = Ember.Object.create({
      powerLevel: pl,
      skills: Ember.A([
-       Ember.Object.create({name:'armas a cuerpo a cuerpo',level:3})
+       Ember.Object.create({name:'armas de pólvora',level:3})
      ]),
      talents: Ember.A([
-       moreThan3RuleTalentORTargets
+       moreThan3RuleTalentSeveralORTargets
      ])
   });
 
-  assert.ok(service.checkMoreThan3RuleTalent(character, moreThan3RuleTalentORTargets));
+  assert.ok(service.checkMoreThan3RuleTalent(character, moreThan3RuleTalentSeveralORTargets));
 });
 
-// test('it should return true when TRAINNING talent requirements accomplished both targets',function(assert){
-//   let service = this.subject();
-//
-//   let pl = this.powerLevelsService.list[0];
-//   let character = Ember.Object.create({
-//      powerLevel: pl,
-//      skills: Ember.A([
-//        Ember.Object.create({name:'persuadir',isTrainning:true}),
-//        Ember.Object.create({name:'liderazgo',isTrainning:true})
-//      ]),
-//      talents: Ember.A([
-//        trainningRuleTalent
-//      ])
-//   });
-//
-//   assert.ok(service.checkTrainningTalent(character, trainningRuleTalentTwoTargets));
-// });
+test('it should return true when MORE_THAN_3 talent requirements accomplished both targets',function(assert){
+  let service = this.subject();
+
+  let pl = this.powerLevelsService.list[0];
+  let character = Ember.Object.create({
+     powerLevel: pl,
+     skills: Ember.A([
+       Ember.Object.create({name:'armas a cuerpo a cuerpo',level:3}),
+       Ember.Object.create({name:'armas a 1 mano',level:3})
+     ]),
+     talents: Ember.A([
+       moreThan3RuleTalentANDTargets
+     ])
+  });
+
+  assert.ok(service.checkMoreThan3RuleTalent(character, moreThan3RuleTalentANDTargets));
+});
