@@ -7,6 +7,7 @@ moduleFor('service:talents', 'Unit | Service | talents | MORE_THAN_3 rule', {
   integration: true,
   beforeEach: function () {
     this.inject.service('power-levels', { as: 'powerLevelsService' });
+    this.inject.service('talents-validators', { as: 'validators' });
     moreThan3RuleTalent = Ember.Object.create({
         "name": "Artista Marcial",
         "PD": 8,
@@ -80,7 +81,7 @@ test('it should return falsliderazgoe when MORE_THAN_3 talent requirements are n
      ])
   });
 
-  assert.notOk(service.checkMoreThan3RuleTalent(character, moreThan3RuleTalent));
+  assert.notOk(this.validators.checkMoreThan3RuleTalent(character, moreThan3RuleTalent));
 });
 
 test('it should return true when MORE_THAN_3 talent requirements are accomplished',function(assert){
@@ -97,7 +98,7 @@ test('it should return true when MORE_THAN_3 talent requirements are accomplishe
      ])
   });
 
-  assert.ok(service.checkMoreThan3RuleTalent(character, moreThan3RuleTalent));
+  assert.ok(this.validators.checkMoreThan3RuleTalent(character, moreThan3RuleTalent));
 });
 
 test('it should return true when MORE_THAN_3 talent when one requirements is accomplished with OR operator',function(assert){
@@ -114,7 +115,7 @@ test('it should return true when MORE_THAN_3 talent when one requirements is acc
      ])
   });
 
-  assert.ok(service.checkMoreThan3RuleTalent(character, moreThan3RuleTalentSeveralORTargets));
+  assert.ok(this.validators.checkMoreThan3RuleTalent(character, moreThan3RuleTalentSeveralORTargets));
 });
 
 test('it should return true when MORE_THAN_3 talent requirements accomplished both targets',function(assert){
@@ -132,5 +133,5 @@ test('it should return true when MORE_THAN_3 talent requirements accomplished bo
      ])
   });
 
-  assert.ok(service.checkMoreThan3RuleTalent(character, moreThan3RuleTalentANDTargets));
+  assert.ok(this.validators.checkMoreThan3RuleTalent(character, moreThan3RuleTalentANDTargets));
 });

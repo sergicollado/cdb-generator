@@ -6,6 +6,7 @@ moduleFor('service:talents', 'Unit | Service | talents-knowledgeComputer', {
   integration: true,
   beforeEach: function () {
     this.inject.service('power-levels', { as: 'powerLevelsService' });
+    this.inject.service('talents-validators', { as: 'validators' });
     knowledgeComputerTalent = Ember.Object.create({
             "name": "Investigador",
             "PD": 5,
@@ -50,7 +51,7 @@ test('it should return false when KNOWLEDGE_COMPUTER talent science or knowledge
      ])
   });
 
-  assert.notOk(service.checkComputerKnowledge(character, knowledgeComputerTalent));
+  assert.notOk(this.validators.checkComputerKnowledge(character, knowledgeComputerTalent));
 });
 
 test('it should return true when KNOWLEDGE_COMPUTER when every requeriment are provided',function(assert){
@@ -69,7 +70,7 @@ test('it should return true when KNOWLEDGE_COMPUTER when every requeriment are p
      ])
   });
 
-  assert.ok(service.checkComputerKnowledge(character, knowledgeComputerTalent));
+  assert.ok(this.validators.checkComputerKnowledge(character, knowledgeComputerTalent));
 
   character = Ember.Object.create({
      powerLevel: pl,
@@ -83,7 +84,7 @@ test('it should return true when KNOWLEDGE_COMPUTER when every requeriment are p
      ])
   });
 
-  assert.ok(service.checkComputerKnowledge(character, knowledgeComputerTalent));
+  assert.ok(this.validators.checkComputerKnowledge(character, knowledgeComputerTalent));
 });
 
 test('it should return true when KNOWLEDGE_COMPUTER whitout computer skill in low NT',function(assert){
@@ -102,7 +103,7 @@ test('it should return true when KNOWLEDGE_COMPUTER whitout computer skill in lo
      ])
   });
 
-  assert.ok(service.checkComputerKnowledge(character, knowledgeComputerTalent));
+  assert.ok(this.validators.checkComputerKnowledge(character, knowledgeComputerTalent));
 });
 
 test('it should return false when KNOWLEDGE_COMPUTER whitout computer skill in high NT',function(assert){
@@ -121,7 +122,7 @@ test('it should return false when KNOWLEDGE_COMPUTER whitout computer skill in h
      ])
   });
 
-  assert.notOk(service.checkComputerKnowledge(character, knowledgeComputerTalent));
+  assert.notOk(this.validators.checkComputerKnowledge(character, knowledgeComputerTalent));
 });
 //
 // test('it should return true when TRAINNING talent requirements are accomplished',function(assert){

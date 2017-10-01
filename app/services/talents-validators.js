@@ -1,55 +1,24 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-    store: Ember.inject.service(),
-    operators:{
-      AND:'AND',
-      OR: 'OR',
-      NEITHER: 'NEITHER'
-    },
-    rules :{
-      TRAINNING:'TRAINNING',
-      MORE_THAN_3:'MORE_THAN_3',
-      KNOWLEDGE_COMPUTER:'KNOWLEDGE_COMPUTER',
-      MORE_THAN_3_TRAINNING:'MORE_THAN_3_TRAINNING'
-    },
-    loadTalents(){
-      return Ember.$.getJSON("talents.json").then(function(data){
-        let talents = data.map(function(obj){
-          return Ember.Object.create(obj);
-        });
-        return talents;
-      })
-    },
-    assembleTalent(talent){
-      let store = this.get('store');
-      return store.createRecord('talent',{
-          name: talent.name,
-          description: talent.description ,
-          requirements: talent.requirements,
-          requirementRule: talent.requirementRule,
-          PD: talent.PD,
-          mod: talent.mod,
-          requirementTarget: talent.requirementTarget,
-          target: talent.target
-        });
-    },
+    talents: Ember.inject.service('talents'),
+    operators: function(){ return this.get('talents').operators; },
     _extractTargets(requirementTarget){
-      if (requirementTarget.includes(this.operators.OR) ){
-        return {targets:requirementTarget.split(this.operators.OR),
-        operator:this.operators.OR}
+      if (requirementTarget.includes(this.operators().OR) ){
+        return {targets:requirementTarget.split(this.operators().OR),
+        operator:this.operators().OR}
       }
-      if(requirementTarget.includes(this.operators.AND) ){
-        return {targets:requirementTarget.split(this.operators.AND),
-        operator:this.operators.AND}
+      if(requirementTarget.includes(this.operators().AND) ){
+        return {targets:requirementTarget.split(this.operators().AND),
+        operator:this.operators().AND}
       }
       return {
         targets: [requirementTarget],
-        operator:this.operators.NEITHER
+        operator:this.operators().NEITHER
       };
     },
     _checkTrainningTalentOperatorOR(requirementTarget, skills){
-      if (requirementTarget.operator !== this.operators.OR){
+      if (requirementTarget.operator !== this.operators().OR){
         return true;
       }
       return requirementTarget.targets.some(function(target){
@@ -59,7 +28,7 @@ export default Ember.Service.extend({
     },
 
     _checkTrainningTalentOperatorAND(requirementTarget, skills){
-      if(requirementTarget.operator !== this.operators.AND){
+      if(requirementTarget.operator !== this.operators().AND){
         return true;
       }
       return requirementTarget.targets.every(function(target){
@@ -68,7 +37,7 @@ export default Ember.Service.extend({
       });
     },
     _checkTrainningTalentOperatorNEITHER(requirementTarget, skills){
-      if(requirementTarget.operator !== this.operators.NEITHER){
+      if(requirementTarget.operator !== this.operators().NEITHER){
         return true;
       }
       return requirementTarget.targets.every(function(target){
@@ -78,7 +47,7 @@ export default Ember.Service.extend({
     },
 
     _checkMoreThan3TalentOperatorNEITHER(requirementTarget, skills){
-      if(requirementTarget.operator !== this.operators.NEITHER){
+      if(requirementTarget.operator !== this.operators().NEITHER){
         return true;
       }
       return requirementTarget.targets.every(function(target){
@@ -88,7 +57,7 @@ export default Ember.Service.extend({
       });
     },
     _checkMoreThan3TalentOperatorOR(requirementTarget, skills){
-      if(requirementTarget.operator !== this.operators.OR){
+      if(requirementTarget.operator !== this.operators().OR){
         return true;
       }
       return requirementTarget.targets.some(function(target){
@@ -97,7 +66,7 @@ export default Ember.Service.extend({
       });
     },
     _checkMoreThan3TalentOperatorAND(requirementTarget, skills){
-      if(requirementTarget.operator !== this.operators.AND){
+      if(requirementTarget.operator !== this.operators().AND){
         return true;
       }
       return requirementTarget.targets.every(function(target){

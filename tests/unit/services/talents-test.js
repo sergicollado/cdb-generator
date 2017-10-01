@@ -6,6 +6,7 @@ moduleFor('service:talents', 'Unit | Service | talents', {
   integration: true,
   beforeEach: function () {
     this.inject.service('power-levels', { as: 'powerLevelsService' });
+    this.inject.service('talents-validators', { as: 'validators' });
     trainningRuleTalent =   Ember.Object.create({
       "name": "Ambidiestro",
       "PD": 9,
@@ -46,7 +47,6 @@ test('it exists', function(assert) {
 });
 
 test('it should return false when TRAINNING talent requirements are not accomplished',function(assert){
-  let service = this.subject();
 
   let pl = this.powerLevelsService.list[0];
   let character = Ember.Object.create({
@@ -59,11 +59,10 @@ test('it should return false when TRAINNING talent requirements are not accompli
      ])
   });
 
-  assert.notOk(service.checkTrainningTalent(character, trainningRuleTalent));
+  assert.notOk(this.validators.checkTrainningTalent(character, trainningRuleTalent));
 });
 
 test('it should return true when TRAINNING talent requirements are accomplished',function(assert){
-  let service = this.subject();
 
   let pl = this.powerLevelsService.list[0];
   let character = Ember.Object.create({
@@ -77,11 +76,10 @@ test('it should return true when TRAINNING talent requirements are accomplished'
      ])
   });
 
-  assert.ok(service.checkTrainningTalent(character, trainningRuleTalent));
+  assert.ok(this.validators.checkTrainningTalent(character, trainningRuleTalent));
 });
 
 test('it should return false when TRAINNING talent requirements not accomplished both targets',function(assert){
-  let service = this.subject();
 
   let pl = this.powerLevelsService.list[0];
   let character = Ember.Object.create({
@@ -95,11 +93,10 @@ test('it should return false when TRAINNING talent requirements not accomplished
      ])
   });
 
-  assert.notOk(service.checkTrainningTalent(character, trainningRuleTalentTwoTargets));
+  assert.notOk(this.validators.checkTrainningTalent(character, trainningRuleTalentTwoTargets));
 });
 
 test('it should return true when TRAINNING talent requirements accomplished both targets',function(assert){
-  let service = this.subject();
 
   let pl = this.powerLevelsService.list[0];
   let character = Ember.Object.create({
@@ -113,5 +110,5 @@ test('it should return true when TRAINNING talent requirements accomplished both
      ])
   });
 
-  assert.ok(service.checkTrainningTalent(character, trainningRuleTalentTwoTargets));
+  assert.ok(this.validators.checkTrainningTalent(character, trainningRuleTalentTwoTargets));
 });
