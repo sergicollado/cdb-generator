@@ -9,12 +9,17 @@ export default Ember.Component.extend({
       let skillServices = this.get('skillsServices');
 
       skills.clear();
+      let base = skillServices.get('base');
       let optionalSkills = skillServices.getOptionalSkillsByNT(this.get('character.NT'));
       let NTSkills = skillServices.getNTSkillsByNT(this.get('character.NT'));
       let store = this.get('store');
 
 
-      skillServices.addBaseSkills(skills);
+
+      base.forEach(function(skill){
+        let baseType = skillServices.get('BASE_SKILL');
+        skills.addObject(store.createRecord('skill',{name:skill,level:0, type: skillServices.BASE_SKILL }));
+      });
       optionalSkills.forEach(function(skillName){
         skills.addObject(store.createRecord('skill',{name: skillName[0],level: 0, type: skillServices.OPTIONAL_SKILLS}))
       });

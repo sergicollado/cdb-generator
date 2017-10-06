@@ -1,6 +1,6 @@
 {{log 'character:' character}}
 
-<div class="ui two column doubling stackable grid container">
+<div class="ui two column doubling  grid container">
 <div class="column">
   BASE<br>
   <table class="ui very basic compact  table">
@@ -19,39 +19,39 @@
   </table>
 </div>
 
-<div class="column">
-  OPTIONAL<br>
-  <table class="ui very basic compact  table">
-    <thead>
-      <tr><th class="single line six wide">Habilidades</th>
-      <th class="one wide">Entrenado</th>
-      <th class="one wide">PD</th>
-      <th class="one wide">Nivel</th>
-      <th class="one wide">Mod</th>
-    </tr></thead>
-    <tbody>
-      {{#each optionalSkills as |skill index|}}
-          {{optional-skill-item skill=skill options=skillOptions currentSkill=index}}
-      {{/each}}
-    </tbody>
-  </table>
-</div>
+  <div class="column">
+    OPTIONAL<br>
+    <table class="ui very basic compact  table">
+      <thead>
+        <tr><th class="single line six wide">Habilidades</th>
+        <th class="one wide">Entrenado</th>
+        <th class="one wide">PD</th>
+        <th class="one wide">Nivel</th>
+        <th class="one wide">Mod</th>
+      </tr></thead>
+      <tbody>
+        {{#each optionalSkills as |skill index|}}
+            {{optional-skill-item skill=skill options=skillOptions currentSkill=index}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
 
-<div class="column">
-  NT<br>
-  <table class="ui very basic compact  table ">
-    <thead>
-      <tr><th class="single line six wide">Habilidades</th>
-      <th class="one wide">Entrenado</th>
-      <th class="one wide">PD</th>
-      <th class="one wide">Nivel</th>
-      <th class="one wide">Mod</th>
-    </tr></thead>
-    <tbody>
-      {{#each NTSkills as |skill|}}
-          {{skill-item skill=skill}}
-      {{/each}}
-    </tbody>
-  </table>
-</div>
+  <div class="column">
+    NT<br>
+    <table class="ui very basic compact  table ">
+      <thead>
+        <tr><th class="single line six wide">Habilidades</th>
+        <th class="one wide">Entrenado</th>
+        <th class="one wide">PD</th>
+        <th class="one wide">Nivel</th>
+        <th class="one wide">Mod</th>
+      </tr></thead>
+      <tbody>
+        {{#each NTSkills as |skill|}}
+            {{skill-item skill=skill}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
 </div>

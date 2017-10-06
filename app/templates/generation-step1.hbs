@@ -1,10 +1,12 @@
 {{#ui-sticky context="#main-container"}}
       <div class="header item">
+        {{info-messages character=model}}
         {{character-statistics character=model}}
-        </div>
+      </div>
 {{/ui-sticky }}
 <br>
-{{info-messages character=model}}
+
+
 
 {{#ui-accordion class="styled fluid" exclusive=false }}
   <div class="title">

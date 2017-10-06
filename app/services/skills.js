@@ -14,14 +14,6 @@ export default Ember.Service.extend({
     getNTSkillsByNT(NT){
       return this.get('NTList.skillsByNT')[NT];
     },
-    addBaseSkills: function(skills){
-      let store = this.get('store');
-      let baseType = this.get('BASE_SKILL');
-      this.get('base').forEach(function(skill){
-          let sk = store.createRecord('skill',{name:skill,level:0, type: baseType });
-          skills.addObject(sk);
-      });
-    },
     cleanNTSkills: function(skills){
       let baseType = this.get('BASE_SKILL');
 
@@ -36,7 +28,6 @@ export default Ember.Service.extend({
     getNTSkills: function(skills){
       let NTSkills = skills.filterBy('type', this.get('NT_SKILL'));
       let onlyOptional = skills.filterBy('type', this.get('OPTIONAL_SKILLS'));
-
 
       return NTSkills.reject(function(optional){
         return onlyOptional.findBy('name',optional.get('name'));

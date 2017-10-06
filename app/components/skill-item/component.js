@@ -11,11 +11,13 @@ export default Ember.Component.extend({
     return !this.get('skill.isTrainning');
   }),
   trainningChange: Ember.observer('skill.isTrainning', function() {
-      if(this.get('skill.isTrainning')){
-        this.set('skill.level',0);
-      }else{
-        this.set('skill.level',undefined);
-      }
+    if(this.get('isReadOnly')){
+      return;
     }
-  )
+    if(this.get('skill.isTrainning')){
+      this.set('skill.level',0);
+    }else{
+      this.set('skill.level',undefined);
+    }
+  })
 });
