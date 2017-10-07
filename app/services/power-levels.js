@@ -56,7 +56,7 @@ export default Ember.Service.extend({
       if (!skillLimitsList){return true;}
       let skills = character.get('skills');
       return !skillLimitsList.some(function(skillLimit){
-          let levelOvercome = false
+          let levelOvercome = false;
           let maxCount = skills.reduce(function(previousValue, skill, index, enumerable){
 
             if( skill.get('level') == skillLimit.max){
@@ -71,8 +71,10 @@ export default Ember.Service.extend({
       });
     },
     checkTalentsPDLimits(character){
-      return character.get('talentsPD') <= character.get('powerLevel').talents.PDmax;
+      let talents = character.get('powerLevel').talents;
+      if (!talents){return true;}
 
+      return character.get('talentsPD') <= talents.PDmax;
     },
     // checkGifts(character){
     //   return true;

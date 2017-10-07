@@ -1,19 +1,19 @@
 <div>
   {{#if showRequeriments}}
-    <div class="ui info floating  message">
+    <div class="ui warning floating  message">
       <i class="close icon"  {{action "click"}}></i>
       <div class="header">
         Has superado las siguientes restricciones:
       </div>
       <ul class="list">
         {{#if skillsLimitations}}
-        <li>Has superado los límites en el nível de atributos del personaje</li>
+        <li>Límites de nivel de Habilidades superado</li>
         {{/if}}
         {{#if talentsMaxPDLimitations}}
-          <li>Has superado los límites en talentos</li>
+          <li>PD máximo superado en los Talentos</li>
         {{/if}}
-        {{#if talentsMaxPDLimitations}}
-          <li>No cumples con algún requerimiento en algún talento</li>
+        {{#if talentsRequirementsLimitations}}
+          <li>No cumples con los requisitos en algún talento</li>
         {{/if}}
       </ul>
     </div>
