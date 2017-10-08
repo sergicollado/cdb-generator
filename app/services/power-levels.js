@@ -49,7 +49,12 @@ export default Ember.Service.extend({
 `
     }],
     checkPointsLimits(character){
-      return character.get('totalPD') <= character.get('powerLevel').points;
+      let powerLevel = character.get('powerLevel');
+      if(!powerLevel){
+        return;
+      }
+
+      return character.get('totalPD') <= powerLevel.points;
     },
     checkSkillsLimits(character){
       let skillLimitsList = character.get('powerLevel').skillLimits;

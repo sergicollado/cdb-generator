@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-    talents: Ember.inject.service('talents'),
-    operators: function(){ return this.get('talents').operators; },
+    talentsService: Ember.inject.service('talents'),
+    operators: function(){ return this.get('talentsService').operators; },
     _extractTargets(requirementTarget){
       if (requirementTarget.includes(this.operators().OR) ){
         return {targets:requirementTarget.split(this.operators().OR),
@@ -115,5 +115,39 @@ export default Ember.Service.extend({
       return (psicologySkill.get('level') >= 3 &&
         figureOutIntentionSKill.get('isTrainning') &&
         persuadeSkill.get('isTrainning'));
+    },
+    checkCharacterTalent(character,talent){
+      let rules = this.get('talentsService').rules;
+      let self = this;
+      let rule =  talent.get('requirementRule');
+
+      if (!rule){
+        return true;
+      }
+
+      if(rule === rules.TRAINNING ){
+        return self.checkTrainningTalent(character, talent);
+      }
+      if(rule === rules.MORE_THAN_3 ){
+        return self.checkMoreThan3RuleTalent(character, talent);
+      }
+      if(rule === rules.KNOWLEDGE_COMPUTER ){
+        return self.checkComputerKnowledge(character, talent);
+      }
+      if(rule === rules.MORE_THAN_3_TRAINNING ){
+        return self.checkMoreThan3Trainning(character, talent);
+      }
+
+      throw talent.get('name')+' talents-validators.checkCharacterTalent rule doesnt match :(';
+    },
+    checkCharacterTalents(character){
+      let talents = character.get('talents');
+      if (!talents){return true;}
+
+      let rules = this.get('talentsService').rules;
+      let self = this;
+      return talents.every(function(talent){
+        return self.checkCharacterTalent(character,talent);
+      });
     }
 });

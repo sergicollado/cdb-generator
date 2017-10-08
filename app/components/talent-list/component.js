@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   talentService: Ember.inject.service('talents'),
+  talentsValidators: Ember.inject.service('talents-validators'),
   init: function(){
     this._super(...arguments);
     let self = this;

@@ -6,6 +6,9 @@
         Has superado las siguientes restricciones:
       </div>
       <ul class="list">
+        {{#if PDLimitations}}
+        <li>Has sobrepasado el límite de PD recomendado</li>
+        {{/if}}
         {{#if skillsLimitations}}
         <li>Límites de nivel de Habilidades superado</li>
         {{/if}}
