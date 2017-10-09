@@ -8,19 +8,19 @@ export default Ember.Component.extend({
   hide:false,
   powerLevelsService: Ember.inject.service('power-levels'),
   talentsValidators: Ember.inject.service('talents-validators'),
-  PDLimitations:Ember.computed('character.totalPD',function(){
+  PDLimitations:Ember.computed('character.totalPD','character.powerLevel',function(){
     let character = this.get('character');
     this.set('hide', false);
     console.log('update PD limits');
     return !this.get('powerLevelsService').checkPointsLimits(character);
   }),
-  talentsMaxPDLimitations:Ember.computed('character.talents.[]',function(){
+  talentsMaxPDLimitations:Ember.computed('character.talents.[]', 'character.powerLevel',function(){
     let character = this.get('character');
     this.set('hide', false);
     console.log('update message talent limits');
     return !this.get('powerLevelsService').checkTalentsPDLimits(character);
   }),
-  skillsLimitations:Ember.computed('character.skills.@each.level',function(){
+  skillsLimitations:Ember.computed('character.skills.@each.level','character.powerLevel',function(){
     let character = this.get('character');
     this.set('hide', false);
     return !this.get('powerLevelsService').checkSkillsLimits(character);

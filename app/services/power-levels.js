@@ -56,10 +56,35 @@ export default Ember.Service.extend({
 
       return character.get('totalPD') <= powerLevel.points;
     },
+    _checkNormalPowerskillLimits(skills){
+      let level3 = 0;
+      let level4 = 0;
+      let levelOvercome = false;
+      skills.forEach(function(skill, index, enumerable){
+
+        if( skill.get('level') == 3){
+          return level3+=1;
+        }
+
+        if( skill.get('level') == 4){
+          return level4+=1;
+        }
+        if( skill.get('level') > 4){
+          return levelOvercome = true;
+        }
+      });
+      return (!levelOvercome && level3<=4 &&  level4<=1);
+    },
+
     checkSkillsLimits(character){
       let skillLimitsList = character.get('powerLevel').skillLimits;
       if (!skillLimitsList){return true;}
       let skills = character.get('skills');
+      if (character.get('powerLevel').name == 'normal'){
+        console.log('norma check');
+        return this._checkNormalPowerskillLimits(skills);
+      }
+
       return !skillLimitsList.some(function(skillLimit){
           let levelOvercome = false;
           let maxCount = skills.reduce(function(previousValue, skill, index, enumerable){
