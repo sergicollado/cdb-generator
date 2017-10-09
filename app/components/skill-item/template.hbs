@@ -1,9 +1,9 @@
 <td>
   <div class="ui ribbon label">{{skill.name}}</div>
 </td>
-<td><div class="ui mobile only" >Entrenado</div> {{ui-checkbox label="" checked=skill.isTrainning readonly=isReadOnly onChange=(action  (mut skill.isTrainning) )}}</td>
-<td><span class="ui mobile only " >PD</span> {{skill.PD}}</td>
+<td><span class="mobile only" >Entrenado</span> {{ui-checkbox label="" checked=skill.isTrainning readonly=isReadOnly onChange=(action  (mut skill.isTrainning) )}}</td>
+<td><span class="mobile only" >PD</span> {{skill.PD}}</td>
 <td class="ui mini  input">
-    <span class="ui mobile only " >Nivel</span> {{input type="number" min="0" max="8" disabled=isLevelReadonly value=skill.level placeholder="level" }}
+    <span class="mobile only" >Nivel</span> {{input type="number" min="0" max="8" disabled=isLevelReadonly value=skill.level placeholder="level" }}
 </td>
-<td><span class="ui mobile only" >Mod</span> {{skill.mod}}</td>
+<td><span class="mobile only " >Mod</span> {{skill.mod}}</td>
