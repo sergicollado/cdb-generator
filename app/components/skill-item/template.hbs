@@ -1,5 +1,5 @@
 <td>
-  <div class="ui ribbon label">{{skill.name}}</div>
+  <div class="ui ribbon label {{if skill.isTrainning "orange"}}">{{skill.name}}</div>
 </td>
 <td><span class="mobile only" >Entrenado</span> {{ui-checkbox label="" checked=skill.isTrainning readonly=isReadOnly onChange=(action  (mut skill.isTrainning) )}}</td>
 <td><span class="mobile only" >PD</span> {{skill.PD}}</td>

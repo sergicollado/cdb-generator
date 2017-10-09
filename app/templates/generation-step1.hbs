@@ -42,7 +42,15 @@
     Habilidades
   </div>
   <div class="content">
-    {{skill-list character=model}}
+    {{#if model.NT}}
+      {{skill-list character=model}}
+    {{else}}
+      <div class="ui info floating  message">
+        <div class="header">
+          Debes seleccionar primero el nivel tecnológico de la partida
+        </div>
+      </div>
+    {{/if}}
   </div>
 
   <div class="title">

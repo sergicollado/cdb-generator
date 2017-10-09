@@ -1,5 +1,5 @@
 <table class="ui very basic compact selectable table">
-  <thead>
+  <thead class="mobile hidden">
     <tr><th class="four wide">Talentos</th>
     <th class="six wide" >Descripción</th>
     <th class="tree wide">Requisitos</th>
@@ -9,12 +9,17 @@
     {{#each character.talents as |talent|}}
     <tr class="">
       <td>
-        <div class="ui ribbon label">{{talent.name}}</div>
+        <div class="ui ribbon orange label">{{talent.name}}</div>
         <i class="remove icon" {{action "removeTalent" talent}}></i>
       </td>
       <td>{{talent.description}}</td>
-      <td>{{talent.requirements}}</td>
-      <td>{{talent.PD}}</td>
+      <td><label class="mobile only">{{if talent.requirements "Requisitos:" }} </label>{{talent.requirements}}</td>
+      <td>
+        <div class="ui orange label">
+          PD:
+          <div class="detail gray">{{talent.PD}}</div>
+        </div>
+      </td>
     </tr>
     {{/each}}
   </tbody>
@@ -27,7 +32,7 @@
 {{#if isShowingTalentSelector}}
 <div class="ui small header">Talentos a seleccionar</div>
   <table class="ui very basic compact selectable table">
-    <thead>
+    <thead class="mobile hidden">
       <tr><th class="four wide">Talentos</th>
       <th class="six wide" >Descripción</th>
       <th class="tree wide">Requisitos</th>
@@ -43,8 +48,8 @@
         {{/if}}
         </td>
         <td>{{talent.description}}</td>
-        <td>{{talent.requirements}}</td>
-        <td>{{talent.PD}}</td>
+        <td><label class="mobile only">{{if talent.requirements "Requisitos:" ""}} </label>{{talent.requirements}}</td>
+        <td><label class="mobile only">PD: </label>{{talent.PD}}</td>
 
       </tr>
       {{/each}}
