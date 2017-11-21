@@ -21,6 +21,28 @@
         </div>
       </td>
     </tr>
+    {{#if talent.levelsName}}
+    <tr class="">
+      <td colspan="4">
+        <div class="ui ordered mini steps">
+          {{#each talent.levelsName as |name index|}}
+            <div class="{{ level-step-class talent index }}  step" {{action "setLevel" talent index}}>
+              <div class="content">
+                <div class="title">{{name}}</div>
+                {{!-- <div class="description">
+                  <div class="ui orange label">
+                    PD:
+                    <div class="detail">{{ talent.PD }}</div>
+                  </div>
+                </div> --}}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </td>
+    </tr>
+    {{/if}}
+
     {{/each}}
   </tbody>
 </table>

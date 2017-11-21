@@ -2,12 +2,14 @@
   {
     "name": "Afortunado",
     "PD": 8,
-    "description": "Con 1 nivel repite 1 tirada cada 4 horas de partida. Con 2 niveles la repite cada 2 horas de partida",
+    "description": "Con 1 nivel repite 1 tirada cada 4 horas de partida.Con un segundo  nivel repite 1 tirada cada 2 horas de partida",
     "target": "",
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Afortunado\",\"Extremadamente Afortunado\"]"
   },
   {
     "name": "Ambidiestro",
@@ -17,7 +19,9 @@
     "requirements": "Entrenado en armas cuerpo a cuerpo o distancia",
     "requirementTarget": "armas a cuerpo a cuerpoORarmas a distancia",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Artista Marcial",
@@ -27,7 +31,9 @@
     "requirements": "Tener la Habilidad Pelea a +3 o más.",
     "requirementTarget": "pelea",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Atractivo",
@@ -35,9 +41,11 @@
     "description": "+1 a las tiradas de las Habilidades Persuadir y Engañar por nivel con personas que se puedan sentir atraídas, hasta un máximo de 2 niveles.",
     "target": "persuadirANDengañar",
     "requirements": "Entrenado en Persuadir y Engañar.",
-    "requirementTarget": "persuadir",
+    "requirementTarget": "persuadirANDengañar",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Atractivo\",\"Extremadamente Atractivo\"]"
   },
   {
     "name": "Caes como un Gato",
@@ -47,17 +55,21 @@
     "requirements": "Tener la Habilidad Agilidad a +3 o más.",
     "requirementTarget": "agilidad",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Carismático",
     "PD": 7,
     "description": "+1 a las tiradas de las Habilidades Liderazgo y Persuadir por nivel cuando el carisma puede tener efecto, hasta un máximo de 3 niveles",
-    "target": "",
+    "target": "liderazgoANDpersuadir",
     "requirements": "Entrenado en Liderazgo y Persuadir.",
     "requirementTarget": "persuadirANDliderazgo",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Carismático\",\"Extremandamente Carismático\",\"Lider Nato\"]"
   },
   {
     "name": "Científico Nato",
@@ -67,7 +79,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Comerciante",
@@ -77,7 +91,9 @@
     "requirements": "Tener la Habilidad Persuadir a +3 o más",
     "requirementTarget": "persuadir",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Concentrado",
@@ -87,27 +103,33 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Conductor Alta Velocidad",
     "PD": 4,
     "description": "+1 a las tiradas de la Habilidad Conducir Vehículo (Ruedas) por nivel cuando conduzca coches de carreras o participe en persecuciones, hasta un máximo de 3 niveles",
-    "target": "",
-    "requirements": "Entrenado en Conducir Vehículo (Ruedas).",
+    "target": "Conducir Vehículo (Ligeros)",
+    "requirements": "Entrenado en Conducir Vehículo (Ligeros).",
     "requirementTarget": "conducir vehículo (ruedas)",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Conductor Alta Velocidad\",\"Conductor Alta Velocidad Experimentado\",\"Piloto de Carreras\"]"
   },
   {
     "name": "Conductor Militar",
     "PD": 5,
     "description": "+1 a las tiradas de las Habilidades Conducir Vehículo (Ligero) y Conducir Vehículo (Pesado) por nivel cuando se conduzca en combate, hasta un máximo de 2 niveles",
-    "target": "",
+    "target": "Conducir Vehículo (Ligeros)ANDConducir Vehículo (Pesado)",
     "requirements": "Entrenado en Conducir Vehículo (Ligero) y Conducir Vehículo (Pesado).",
     "requirementTarget": "conducir vehículo (ligero)ANDconducir vehiculo (pesado)",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Conductor Militar\",\"Conductor Militar Experimentado\"]"
   },
   {
     "name": "Contactos",
@@ -117,7 +139,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Curación Rápida",
@@ -127,7 +151,9 @@
     "requirements": "Tener la Habilidad Vigor a +3 o más.",
     "requirementTarget": "vigor",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Desenvainado Rápido",
@@ -137,7 +163,9 @@
     "requirements": "Tener Armas Cuerpo a Cuerpo o Armas a 1 Mano a 3+ o más",
     "requirementTarget": "armas a cuerpo a cuerpoORarmas a 1 mano",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Detective Privado",
@@ -146,8 +174,10 @@
     "target": "",
     "requirements": "Tener la Habilidad Atención a +3 o más",
     "requirementTarget": "",
-    "requirementRule": "",
-    "mod": ""
+    "requirementRule": "MORE_THAN_3",
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Antropología",
@@ -157,7 +187,9 @@
     "requirements": "Tener la Habilidad Conocimiento (Antropología) a +3 o más",
     "requirementTarget": "atención",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Arte",
@@ -167,7 +199,9 @@
     "requirements": "Tener la Habilidad Conocimiento (Arte) a +3 o más",
     "requirementTarget": "conocimiento (arte)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Biología",
@@ -177,7 +211,9 @@
     "requirements": "Tener la Habilidad Ciencia (Biología) a +3 o más",
     "requirementTarget": "ciencia (biología)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Física",
@@ -187,7 +223,9 @@
     "requirements": "Tener la Habilidad Ciencia (Física) a +3 o más",
     "requirementTarget": "ciencia (física)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Forense",
@@ -197,7 +235,9 @@
     "requirements": "Tener la Habilidad Ciencia (Forense) a +3 o más",
     "requirementTarget": "ciencia (forense)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Genética",
@@ -207,7 +247,9 @@
     "requirements": "Tener la Habilidad Ciencia (Genética) a +3 o más",
     "requirementTarget": "ciencia (genética)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en \nGeografía",
@@ -217,7 +259,9 @@
     "requirements": "Tener la Habilidad Conocimiento (Geografía) a +3 o más",
     "requirementTarget": "conocimiento (geografía)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Geología",
@@ -227,7 +271,9 @@
     "requirements": "Tener la Habilidad Ciencia (Geología) a +3 o más",
     "requirementTarget": "ciencia (geología)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Historia",
@@ -237,7 +283,9 @@
     "requirements": "Tener la Habilidad Conocimiento (Historia) a +3 o más",
     "requirementTarget": "conocimiento (historia)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en \nInformática",
@@ -247,7 +295,9 @@
     "requirements": "Tener la Habilidad Ciencia (Informática) a +3 o más",
     "requirementTarget": "ciencia (informática)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en \nIngeniería",
@@ -257,7 +307,9 @@
     "requirements": "Tener la Habilidad Ciencia (Ingeniería) a +3 o más",
     "requirementTarget": "ciencia (ingeniería)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Leyes",
@@ -267,7 +319,9 @@
     "requirements": "Tener la Habilidad Conocimiento (Leyes) a +3 o más",
     "requirementTarget": "conocimiento (leyes)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en \nLingüística",
@@ -277,7 +331,9 @@
     "requirements": "Tener la Habilidad Conocimiento (Lingüística) a +3 o más",
     "requirementTarget": "conocimiento (lingüística)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en \nMatemáticas",
@@ -287,7 +343,9 @@
     "requirements": "Tener la Habilidad Ciencia (Matemáticas) a +3 o más",
     "requirementTarget": "ciencia (matemáticas)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en \nMedicina",
@@ -297,7 +355,9 @@
     "requirements": "Tener la Habilidad Ciencia (Medicina) a +3 o más",
     "requirementTarget": "ciencia (medicina)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en \nPsicología",
@@ -307,7 +367,9 @@
     "requirements": "Tener la Habilidad Conocimiento (Psicología) a +3 o más",
     "requirementTarget": "conocimiento (psicología)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Química",
@@ -317,7 +379,9 @@
     "requirements": "Tener la Habilidad Ciencia (Química) a +3 o más",
     "requirementTarget": "ciencia (química)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en Robótica",
@@ -327,7 +391,9 @@
     "requirements": "Tener la Habilidad Ciencia (Robótica) a +3 o más",
     "requirementTarget": "ciencia (robótica)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en \nSociología",
@@ -337,7 +403,9 @@
     "requirements": "Tener la Habilidad Conocimiento (Sociología) a +3 o más",
     "requirementTarget": "conocimiento (sociología)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Doctorado en \nXenología",
@@ -347,7 +415,9 @@
     "requirements": "Tener la Habilidad Ciencia (Xenología) a +3 o más",
     "requirementTarget": "ciencia (xenología)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Enamorado de Otra Era",
@@ -356,8 +426,10 @@
     "target": "",
     "requirements": "",
     "requirementTarget": "",
-    "requirementRule": "",
-    "mod": ""
+    "requirementRule": "MORE_THAN_3",
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Entrenado en Otra Gravedad",
@@ -367,7 +439,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Equilibrio Perfecto",
@@ -377,7 +451,9 @@
     "requirements": "Tener la Habilidad Agilidad a +3 o más.",
     "requirementTarget": "agilidad",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Escala (Positiva)",
@@ -387,7 +463,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Esquiva Intuitiva",
@@ -397,7 +475,9 @@
     "requirements": "Entrenado en Esquivar",
     "requirementTarget": "esquivar",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Estratega",
@@ -407,7 +487,9 @@
     "requirements": "Tener la Habilidad Liderazgo a +3 o más",
     "requirementTarget": "liderazgo",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Favores debidos",
@@ -417,17 +499,21 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Furtivo",
     "PD": 6,
-    "description": "+1 a las tiradas de la Habilidad Sigilo por nivel cuando se intente esconder, hasta un máximo de 3 niveles",
+    "description": "+1 a las tiradas de la Habilidad Sigilo por nivel cuando se intente esconder, primero de 3 niveles",
     "target": "",
     "requirements": "Entrenado en Sigilo.",
     "requirementTarget": "sigilo",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Furtivo\",\"Furtivo Experimentado\",\"Cazador Nato\"]"
   },
   {
     "name": "Gun Fu",
@@ -437,7 +523,9 @@
     "requirements": "Tener la Habilidad Armas Cortas o Armas de Pólvora a 3+ o más",
     "requirementTarget": "armas cortasORarmas de pólvora",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Gun Kata",
@@ -447,7 +535,9 @@
     "requirements": "Tener la Habilidad Armas Cortas, Armas de Pólvora o Armas Largas a 3+ o más",
     "requirementTarget": "armas cortasORarmas de pólvoraORarmas largas",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Hacker",
@@ -457,7 +547,9 @@
     "requirements": "Entrenado en \nComputadora.",
     "requirementTarget": "computadora",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Hacker\", \"Hacker Profesional\", \"Hacker Experimentado\"]"
   },
   {
     "name": "Infatigable",
@@ -467,7 +559,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Infatigable\",\"Incansable\"]"
   },
   {
     "name": "Investigador",
@@ -477,7 +571,9 @@
     "requirements": "Entrenado en una Habilidad de Ciencia o Conocimiento, además de Atención. Computadora es requisito si NT 6+",
     "requirementTarget": "atenciónANDcomputadora",
     "requirementRule": "KNOWLEDGE_COMPUTER",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Maestría en Arma y Escudo",
@@ -487,7 +583,9 @@
     "requirements": "Entrenado en habilidad de combate cuerpo a cuerpo",
     "requirementTarget": "combate cuerpo a cuerpo",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Maestro de              Esgrima",
@@ -495,9 +593,11 @@
     "description": "Permite usar Armas a 1 Mano o Armas Cuerpo a Cuerpo costando 1 AC menos cada ataque, y da acceso a algunas Maniobras especiales",
     "target": "",
     "requirements": "Tener Habilidad Armas a 1 Mano o Armas Cuerpo a Cuerpo a 3+ o más",
-    "requirementTarget": "armas a 1 manoORarmas cuerpo a cuerpo",
+    "requirementTarget": "armas a 1 mano o armas cuerpo a cuerpo",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Maestro del Saber",
@@ -507,7 +607,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Manitas",
@@ -517,7 +619,9 @@
     "requirements": "Entrenado en \nElectrónica y Mecánica.",
     "requirementTarget": "electrónicaANDmecánica",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Manitas\",\"Reparador\",\"Arreglalotodo\"]"
   },
   {
     "name": "Memoria Eidética",
@@ -527,7 +631,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Nativo de NT superior",
@@ -537,7 +643,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "NT elevado",
@@ -547,7 +655,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Orientación",
@@ -557,7 +667,9 @@
     "requirements": "Entrenado en \nNavegación.",
     "requirementTarget": "navegación",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Orientación\",\"Guía Innato\",\"Orientación Perfecta\"]"
   },
   {
     "name": "Piloto de Combate",
@@ -567,7 +679,9 @@
     "requirements": "Entrenado en Pilotar (Aeronaves) y Pilotar (Astronaves).",
     "requirementTarget": "pilotar (aeronaves)ANDpilotar (astronaves)",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Piloto de Combate\",\"Piloto de Combate Experimentado\"]"
   },
   {
     "name": "Piloto de Pruebas",
@@ -577,7 +691,9 @@
     "requirements": "Entrenado en Pilotar (Aeronaves).",
     "requirementTarget": "pilotar (aeronaves)",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Piloto de Pruebas\",\"Piloto de Pruebas Entrenado\",\"Piloto de Pruebas Experimentado\"]"
   },
   {
     "name": "Psicoanalista",
@@ -587,7 +703,9 @@
     "requirements": "Tener la Habilidad Conocimiento (Psicología) a +3 o más y estar Entrenado en Averiguar Intenciones y Persuadir",
     "requirementTarget": "conocimiento (psicología)ANDaveriguar intenciones",
     "requirementRule": "MORE_THAN_3_TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Puntería Zen",
@@ -597,27 +715,45 @@
     "requirements": "Entrenado en Habilidad de ataque a distancia",
     "requirementTarget": "",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
-    "name": "Puños/Pies  de Acero",
+    "name": "Puños de Acero",
     "PD": 7,
-    "description": "+1 Daño por nivel con puñetazos o patadas, hasta un máximo de 3 niveles en cada uno",
+    "description": "+1 Daño por nivel con puñetazos, hasta un máximo de 3 niveles en cada uno",
     "target": "",
     "requirements": "Entrenado en Pelea.",
     "requirementTarget": "pelea",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Puños de Hierro\",\"Puños de Acero\",\"Puños de Diamante\"]"
+  },
+  {
+    "name": "Pies  de Acero",
+    "PD": 7,
+    "description": "+1 Daño por nivel con patadas, hasta un máximo de 3 niveles en cada uno",
+    "target": "",
+    "requirements": "Entrenado en Pelea.",
+    "requirementTarget": "pelea",
+    "requirementRule": "TRAINNING",
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Pies de Hierro\",\"Pies de Acero\",\"Pies de Diamante\"]"
   },
   {
     "name": "Rango",
     "PD": "Variable",
-    "description": "Cada nivel es un rango superior en una organización militar, para-militar o policial",
+    "description": "Cada nivel es un rango superior en una organización militar, para-militar o policial. El Coste del Talento depende del nivel que se quiera adquirir: Cuesta 3 Puntos de Desarrollo de Rango 1 a Rango 3. Cuesta 5 Puntos de Desarrollo de Rango 4 a Rango 6. Cuesta 7 Puntos de Desarrollo de Rango 7 a Rango 10.",
     "target": "",
     "requirements": "Según Rango",
     "requirementTarget": "",
-    "requirementRule": "",
-    "mod": ""
+    "requirementRule": "RANGE",
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Rapidez",
@@ -627,7 +763,9 @@
     "requirements": "Entrenado en Agilidad y Atención.",
     "requirementTarget": "agilidadANDatención",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Rapidez\", \"Extremadamente Rápido\"]"
   },
   {
     "name": "Reflejos Rápidos",
@@ -637,7 +775,9 @@
     "requirements": "Entrenado en Agilidad y Atención.",
     "requirementTarget": "agilidadANDatención",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Reflejos Rápidos\",\"Reflejos Extremadamente Rápidos\",\"Reflejos Innatos\"]"
   },
   {
     "name": "Resistencia al Daño",
@@ -647,7 +787,9 @@
     "requirements": "Entrenado en Vigor.",
     "requirementTarget": "vigor",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Resistencia al Daño 1\",\"Resistencia al Daño 2\",\"Resistencia al Daño 3\"]"
   },
   {
     "name": "Rico y Poderoso",
@@ -657,7 +799,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Seductor",
@@ -667,17 +811,45 @@
     "requirements": "Entrenado en Persuadir",
     "requirementTarget": "persuadir",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
-    "name": "Sentidos Agudos",
+    "name": "Sentidos Agudos(Vista)",
     "PD": 5,
-    "description": "Escoge un sentido. Por cada nivel se obtiene un +1 a las tiradas de Atención en las que ese sentido afecte. Se puede adquirir para varios sentidos, pudiendo adquirir 2 niveles para cada sentido",
+    "description": "Por cada nivel se obtiene un +1 a las tiradas de Atención en las que ese sentido afecte. Se puede adquirir para varios sentidos, pudiendo adquirir 2 niveles para cada sentido",
     "target": "",
     "requirements": "Entrenado en Atención.",
     "requirementTarget": "atención",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Sentidos Agudos(Vista) 1\",\"Sentidos Agudos(Vista) 2\"]"
+  },
+  {
+    "name": "Sentidos Agudos(Oído)",
+    "PD": 5,
+    "description": "Por cada nivel se obtiene un +1 a las tiradas de Atención en las que ese sentido afecte. Se puede adquirir para varios sentidos, pudiendo adquirir 2 niveles para cada sentido",
+    "target": "",
+    "requirements": "Entrenado en Atención.",
+    "requirementTarget": "atención",
+    "requirementRule": "TRAINNING",
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Sentidos Agudos(Oído) 1\" ,\"Sentidos Agudos(Oído) 2\"]"
+  },
+  {
+    "name": "Sentidos Agudos(Olfato)",
+    "PD": 5,
+    "description": "Por cada nivel se obtiene un +1 a las tiradas de Atención en las que ese sentido afecte. Se puede adquirir para varios sentidos, pudiendo adquirir 2 niveles para cada sentido",
+    "target": "",
+    "requirements": "Entrenado en Atención.",
+    "requirementTarget": "atención",
+    "requirementRule": "TRAINNING",
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Sentidos Agudos(Olfato) 1\" ,\"Sentidos Agudos(Olfato) 2\"]"
   },
   {
     "name": "Sentir el Peligro",
@@ -687,7 +859,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Sigiloso",
@@ -697,7 +871,9 @@
     "requirements": "Entrenado en Sigilo.",
     "requirementTarget": "sigilo",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 3,
+    "levelsName": "[\"Silencioso\",\"Sigiloso\",\"Acechador Nato\"]"
   },
   {
     "name": "Sin Miedo",
@@ -707,7 +883,9 @@
     "requirements": "Entrenado en Voluntad",
     "requirementTarget": "voluntad",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Superviviente (Entorno)",
@@ -717,7 +895,9 @@
     "requirements": "Tener la Habilidad Supervivencia a +3 o más.",
     "requirementTarget": "supervivencia",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Táctico",
@@ -727,7 +907,9 @@
     "requirements": "Entrenado en Liderazgo",
     "requirementTarget": "liderazgo",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Teólogo",
@@ -737,7 +919,9 @@
     "requirements": "Tener la Habilidad Conocimiento (Teología) a +3 o más",
     "requirementTarget": "conocimiento (teología)",
     "requirementRule": "MORE_THAN_3",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Tolerancia al Dolor",
@@ -747,7 +931,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Tolerancia al Dolor\",\"Resistencia al Dolor\"]"
   },
   {
     "name": "Torturador",
@@ -757,7 +943,9 @@
     "requirements": "Entrenado en Intimidar",
     "requirementTarget": "intimidar",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Veloz",
@@ -767,7 +955,9 @@
     "requirements": "Entrenado en Agilidad y Atención.",
     "requirementTarget": "agilidadANDatención",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Veloz\",\"Extremadamente Veloz\"]"
   },
   {
     "name": "Veterano",
@@ -777,7 +967,9 @@
     "requirements": "",
     "requirementTarget": "",
     "requirementRule": "",
-    "mod": ""
+    "mod": "",
+    "maxLevels": "",
+    "levelsName": ""
   },
   {
     "name": "Voluntad de Hierro",
@@ -787,6 +979,8 @@
     "requirements": "Entrenado en Voluntad.",
     "requirementTarget": "voluntad",
     "requirementRule": "TRAINNING",
-    "mod": ""
+    "mod": "",
+    "maxLevels": 2,
+    "levelsName": "[\"Voluntad de Hierro\",\"Voluntad de Acero\", \"Voluntad Inquebrantable\"]"
   }
 ]

@@ -8,5 +8,8 @@ export default DS.Model.extend({
     PD: DS.attr('number'),
     requirementTarget: DS.attr('string'),
     requirementRule: DS.attr('string'),
-    mod:DS.attr('string')
+    mod:DS.attr('string'),
+    maxLevels: DS.attr('number', {defaultValue:0}),
+    levelsName:DS.attr('string'),
+    currentLevel: DS.attr('number',{defaultValue:0}),
 });

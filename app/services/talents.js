@@ -16,13 +16,19 @@ export default Ember.Service.extend({
     loadTalents(){
       return Ember.$.getJSON("talents.json").then(function(data){
         let talents = data.map(function(obj){
-          return Ember.Object.create(obj);
+          let talent = Ember.Object.create(obj);
+          if(obj.levelsName){
+            console.log(obj.levelsName);
+            talent.set('levelsName',JSON.parse(obj.levelsName));
+          }
+          return talent;
         });
         return talents;
       })
     },
     assembleTalent(talent){
       let store = this.get('store');
+      debugger
       return store.createRecord('talent',{
           name: talent.name,
           description: talent.description ,
@@ -31,7 +37,9 @@ export default Ember.Service.extend({
           PD: talent.PD,
           mod: talent.mod,
           requirementTarget: talent.requirementTarget,
-          target: talent.target
+          target: talent.target,
+          levelsName:talent.levelsName,
+          maxLevels:talent.maxLevels
         });
     },
     _extractTargets(requirementTarget){
